@@ -1,0 +1,13 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  @include media-query(handheld) {
+    font-size: 100%;
+  }
+}
+
+hr {
+  display: none;
+}

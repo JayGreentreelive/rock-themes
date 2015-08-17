@@ -1,0 +1,128 @@
+// Rock Admin Helpers
+
+.block-configuration {
+  position: relative;
+
+  height: 30px;
+
+  a {
+    position: absolute;
+    left: 0;
+
+    margin: 0;
+    margin-right: $base-spacing-unit;
+  }
+
+  .block-configuration-bar {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+.zone-configuration,
+.block-configuration {
+  &.config-bar {
+    width: 100%;
+    margin: $base-spacing-unit 0;
+
+    .zoneinstance-config {
+      display: inline-block;
+
+      margin-right: 10px;
+    }
+
+    a,
+    span {
+      display: inline-block;
+
+      margin-right: $base-spacing-unit;
+    }
+
+    .zone-configuration-bar,
+    .block-configuration-bar {
+      display: inline-block;
+    }
+  }
+}
+
+// This is a core rock ID and can't be changed
+#cms-admin-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  padding: 0 20px;
+
+  transition: ease-in-out .45s;
+  text-align: right;
+
+  opacity: 0;
+  background-color: $brand-color;
+
+  font-size: 12px;
+
+  &:hover {
+    transition: ease-in-out .45s;
+
+    opacity: 1;
+  }
+
+  span {
+    display: inline-block;
+
+    margin-right: 10px;
+
+    color: map-get($colors, light-primary);
+  }
+
+  .button-bar {
+    display: inline-block;
+
+    .btn {
+      margin-bottom: 0;
+      padding: $base-spacing-unit/2;
+
+      color: map-get($colors, light-primary);
+      border: 0;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.panel {
+  @include media-query(lap-and-up) {
+    position: relative;
+  }
+
+  position: relative;
+}
+
+// Modal Helpers
+.modal-open {
+  .modal-scrollable {
+    // Core rock markup that can't be changed
+    #modal-popup {
+      height: inherit;
+      max-height: 100%;
+
+      // Core rock markup that can't be changed
+      #modal-popup_contentPanel {
+        height: inherit;
+        max-height: 100%;
+
+        opacity: 1;
+
+        // Core rock markup that can't be changed
+        #modal-popup_iframe {
+          max-height: 100%;
+
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

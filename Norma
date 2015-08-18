@@ -33,11 +33,6 @@ tasks:
     "dest": "zipped/"
     
   "copy":
-    "src": "./readme"
-    "dest": "./"
-    
-  "rockStyles":
-    "@extend": "copy"
     "src": "../../../../Volumes/Plugins/RockWeb/Styles/**/*"
     "dest": "_source/vendor/rock"
     "order": "pre"

@@ -1,7 +1,7 @@
 ##NewSpring Rock Themes
 ---
 
-To standardize our development of CSS across all of our web platforms, we are compiling our Rock themes locally on OS X using Norma, and then copying the minified CSS files to our Rock VM.
+To standardize our development of CSS across all of our web platforms, we are compiling our Rock themes locally on OS X using <a href="https://github.com/NewSpring/Norma" target="_blank">Norma</a>, and then copying the minified CSS files to our Rock VM.
 
 The Rock styles directory is copied from the VM on compile to your mac.  This directory is also tracked in github so that we are aware of core style changes.
 
@@ -13,7 +13,7 @@ The Rock styles directory is copied from the VM on compile to your mac.  This di
 ####Requirements
 
 - OS X connects to VM at the plugins directory
-- All Norma dependencies are installed
+- All <a href="https://github.com/NewSpring/Norma" target="_blank">Norma</a> dependencies are installed
 
 ####Up and Running
 

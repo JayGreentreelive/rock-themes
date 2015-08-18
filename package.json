@@ -1,11 +1,15 @@
 {
   "name": "Rock",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "norma-gzip": "git://github.com/newspring/norma-gzip.git",
+    "norma-less": "git://github.com/newspring/norma-less.git"
+  }
 }

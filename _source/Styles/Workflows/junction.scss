@@ -2,17 +2,17 @@
 
 @import "../../vendor/junction/lib/mixins";
 
-@import "./theme";
+@import "theme";
 
 @import "../../vendor/junction/lib/framework";
 
-@import "./_bootstrap-grid";
-@import "./modals";
-@import "./forms";
-@import "./panel";
-@import "./rock-admin";
+@import "_bootstrap-grid";
+@import "modals";
+@import "forms";
+@import "panel";
+@import "rock-admin";
 
-@import "./overrides";
+@import "overrides";
 
 .shell {
   max-width: 500px;

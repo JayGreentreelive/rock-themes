@@ -5,12 +5,3 @@ node_modules/
 test
 
 .norma
-
-lib
-zipped
-
-# Ignore the vendor folder
-/_source/vendor/*
-
-# With the exception of the rock folder
-!/_source/vendor/rock/

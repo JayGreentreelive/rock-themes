@@ -1,0 +1,45 @@
+"name": "RockThemes"
+"tasks":
+    "bower":
+        "./vendor/stylesheets":
+            "junction": "NewSpring/junction-framework"
+            "fonts": "NewSpring/legacy-newspring-fonts"
+
+    "sass":
+        "endpoint": "NewSpring/norma-sass#feature-windows"
+        "src": "./Fuse/_source/stylesheets/**/*"
+        "dest": "./Fuse/Styles"
+
+    "sass-KidSpring":
+        "@extend": "sass"
+        "src": "./KidSpring/_source/stylesheets/**/*"
+        "dest": "./KidSpring/Styles"
+
+    "sass-NewSpring":
+        "@extend": "sass"
+        "src": "./NewSpring/_source/stylesheets/**/*"
+        "dest": "./NewSpring/Styles"
+
+    "sass-Workflows":
+        "@extend": "sass"
+        "src": "./Workflows/_source/stylesheets/**/*"
+        "dest": "./Workflows/Styles"
+
+    "copy":
+        "src": "./Fuse/**/*"
+        "dest": "../RockWeb/Themes/Fuse"
+
+    "copy-KidSpring":
+        "@extend": "copy"
+        "src": "./KidSpring/**/*"
+        "dest": "../RockWeb/Themes/KidSpring"
+
+    "copy-NewSpring":
+        "@extend": "copy"
+        "src": "./NewSpring/**/*"
+        "dest": "../RockWeb/Themes/NewSpring"
+
+    "copy-Workflows":
+        "@extend": "copy"
+        "src": "./Workflows/**/*"
+        "dest": "../RockWeb/Themes/Workflows"

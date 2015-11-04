@@ -30,11 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+	<Content Include="_source\**\*.*" />
+	<Content Include="_vendor\**\*.*" />
     <Content Include="Fuse\**\*.*" />
     <Content Include="KidSpring\**\*.*" />
     <Content Include="KioskStark\**\*.*" />
     <Content Include="NewSpring\**\*.*" />
     <Content Include="Workflows\**\*.*" />
+	<Content Include="Norma" />
+	<Content Include="package.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

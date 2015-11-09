@@ -6714,18 +6714,17 @@ table tr td {
 .nav .open > a:focus {
   background-color: transparent;
 }
-.contextsetter-campus {
-  float: right;
+.contextsetter {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-right: 0px;
 }
-.contextsetter-campus .dropdown-toggle:hover,
-.contextsetter-campus .dropdown-toggle:focus {
+.contextsetter .dropdown-toggle:hover,
+.contextsetter .dropdown-toggle:focus {
   background-color: transparent !important;
 }
-.contextsetter-campus .dropdown-menu {
+.contextsetter .dropdown-menu {
   right: 0px;
   left: auto;
 }

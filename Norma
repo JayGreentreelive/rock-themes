@@ -5,9 +5,14 @@
             "junction": "NewSpring/junction-framework"
             "fonts": "NewSpring/legacy-newspring-fonts"
 
+    "less":
+        "endpoint": "NewSpring/norma-less"
+        "src": "./NewSpring/Styles/**/*"
+        "dest": "./NewSpring/Styles"
+
     "sass":
         "endpoint": "NewSpring/norma-sass#feature-windows"
-        "src": "./Fuse/_source/stylesheets/**/*"
+        "src": "./Fuse/_source/**/*"
         "dest": "./Fuse/Styles"
 
     "sass-KidSpring":
@@ -27,19 +32,19 @@
 
     "copy":
         "src": "./Fuse/**/*"
-        "dest": "../RockWeb/Themes/Fuse"
+        "dest": "../Rock/RockWeb/Themes/Fuse"
 
     "copy-KidSpring":
         "@extend": "copy"
         "src": "./KidSpring/**/*"
-        "dest": "../RockWeb/Themes/KidSpring"
+        "dest": "../Rock/RockWeb/Themes/KidSpring"
 
     "copy-NewSpring":
         "@extend": "copy"
         "src": "./NewSpring/**/*"
-        "dest": "../RockWeb/Themes/NewSpring"
+        "dest": "../Rock/RockWeb/Themes/NewSpring"
 
     "copy-Workflows":
         "@extend": "copy"
         "src": "./Workflows/**/*"
-        "dest": "../RockWeb/Themes/Workflows"
+        "dest": "../Rock/RockWeb/Themes/Workflows"

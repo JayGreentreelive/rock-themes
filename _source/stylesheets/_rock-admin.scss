@@ -8,27 +8,32 @@
   a {
     position: absolute;
     left: 0;
-
     margin: 0;
     margin-right: $base-spacing-unit;
   }
 
   .block-configuration-bar {
-    position: absolute;
-    left: 30px;
+      width: 100% !important;
+      position: absolute;
+      left: 30px;
   }
 }
 
 .zone-configuration,
 .block-configuration {
   &.config-bar {
-    width: 100%;
+    width: 100% !important;
     margin: $base-spacing-unit 0;
+    z-index: 8000 !important;
 
     .zoneinstance-config {
       display: inline-block;
 
       margin-right: 10px;
+    }
+
+    a {
+        position: relative !important;
     }
 
     a,

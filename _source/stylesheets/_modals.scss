@@ -472,5 +472,29 @@ Copyright (c) 2012 Dan Eden*/
         }
       }
     }
+
+    .modal-content {
+        opacity: 1 !important;
+        max-height: none !important;
+        height: auto !important;
+        
+        * {
+            height: auto !important;
+            max-height: none !important;
+            opacity: 1 !important;
+        }
+
+        .modal-header,
+        .modal-header *,
+        .modal-body,
+        .modal-body *,
+        .modal-footer,
+        .modal-footer * {
+            // display: block;
+            opacity: 1;
+            max-height: none;
+            height: auto !important;
+        }
+    }
   }
 }

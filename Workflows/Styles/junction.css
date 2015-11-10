@@ -1800,7 +1800,7 @@ h4,
   margin-bottom: 10px; }
 
 .btn, .btn--small, .btn--disabled,
-.btn:disabled, .btn--corners, .btn--light, .btn--filled, .btn--dark-tertiary, .btn--alert, .btn--icon, .btn--facebook, .btn--google, .btn--twitter, .control-label,
+.btn:disabled, .btn--corners, .btn--light, .modal-content .modal-footer a, .btn--filled, .btn--dark-tertiary, .btn--alert, .btn--icon, .btn--facebook, .btn--google, .btn--twitter, .control-label,
 h5,
 .h5 {
   font-family: "colfax-web";
@@ -2077,7 +2077,7 @@ textarea {
   background-color: #c64f55; }
 
 .btn, .btn--small, .btn--disabled,
-.btn:disabled, .btn--corners, .btn--light, .btn--filled, .btn--dark-tertiary, .btn--alert, .btn--icon, .btn--facebook, .btn--google, .btn--twitter {
+.btn:disabled, .btn--corners, .btn--light, .modal-content .modal-footer a, .btn--filled, .btn--dark-tertiary, .btn--alert, .btn--icon, .btn--facebook, .btn--google, .btn--twitter {
   border-radius: 1000px;
   position: relative;
   display: inline-block;
@@ -2089,7 +2089,7 @@ textarea {
   text-decoration: none;
   color: #6bac43;
   border: 3px solid #6bac43; }
-  .btn:hover, .btn--small:hover, .btn--disabled:hover, .btn--corners:hover, .btn--light:hover, .btn--filled:hover, .btn--dark-tertiary:hover, .btn--alert:hover, .btn--icon:hover, .btn--facebook:hover, .btn--google:hover, .btn--twitter:hover {
+  .btn:hover, .btn--small:hover, .btn--disabled:hover, .btn--corners:hover, .btn--light:hover, .modal-content .modal-footer a:hover, .btn--filled:hover, .btn--dark-tertiary:hover, .btn--alert:hover, .btn--icon:hover, .btn--facebook:hover, .btn--google:hover, .btn--twitter:hover {
     color: #ffffff;
     background: #6bac43; }
 
@@ -2112,10 +2112,10 @@ textarea {
 .btn--corners {
   border-radius: 0; }
 
-.btn--light {
+.btn--light, .modal-content .modal-footer a {
   color: #ffffff;
   border-color: #ffffff; }
-  .btn--light:hover {
+  .btn--light:hover, .modal-content .modal-footer a:hover {
     color: #505050;
     background-color: #ffffff; }
 
@@ -9785,6 +9785,21 @@ html.modal--opened {
     padding: 0 !important;
     border: 0 !important; } }
 
+html {
+  overflow: hidden; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 100%; } }
+
+hr {
+  display: none; }
+
+.block-configuration .config-bar {
+  width: 100% !important; }
+  .block-configuration .config-bar a {
+    position: relative !important; }
+
 .row > .row {
   margin-left: 0; }
 
@@ -10094,6 +10109,24 @@ Copyright (c) 2012 Dan Eden*/
       max-height: 100%;
       opacity: 1; }
 
+.modal-open .modal-scrollable .modal-content {
+  opacity: 1 !important;
+  max-height: none !important;
+  height: auto !important; }
+  .modal-open .modal-scrollable .modal-content * {
+    height: auto !important;
+    max-height: none !important;
+    opacity: 1 !important; }
+  .modal-open .modal-scrollable .modal-content .modal-header,
+  .modal-open .modal-scrollable .modal-content .modal-header *,
+  .modal-open .modal-scrollable .modal-content .modal-body,
+  .modal-open .modal-scrollable .modal-content .modal-body *,
+  .modal-open .modal-scrollable .modal-content .modal-footer,
+  .modal-open .modal-scrollable .modal-content .modal-footer * {
+    opacity: 1;
+    max-height: none;
+    height: auto !important; }
+
 form {
   height: 100vh; }
 
@@ -10120,15 +10153,20 @@ form {
     content: "\f0d7";
     font-family: "FontAwesome"; }
 
-.checkbox-inline {
+.checkbox-inline,
+.checkbox {
   display: block;
   width: 100%;
   margin: 10px 0;
   padding: 5px 0; }
-  .checkbox-inline:after {
+  .checkbox-inline:after,
+  .checkbox:after {
     display: none;
     visibility: hidden; }
-  .checkbox-inline input, .checkbox-inline .person-picker .picker-label, .person-picker .checkbox-inline .picker-label {
+  .checkbox-inline input, .checkbox-inline .person-picker .picker-label, .person-picker .checkbox-inline .picker-label,
+  .checkbox input,
+  .checkbox .person-picker .picker-label, .person-picker
+  .checkbox .picker-label {
     position: relative;
     top: -3px;
     left: 3px;
@@ -10147,7 +10185,10 @@ form {
     border-radius: 50%;
     background-color: transparent;
     -webkit-appearance: none; }
-    .checkbox-inline input:before, .checkbox-inline .person-picker .picker-label:before, .person-picker .checkbox-inline .picker-label:before {
+    .checkbox-inline input:before, .checkbox-inline .person-picker .picker-label:before, .person-picker .checkbox-inline .picker-label:before,
+    .checkbox input:before,
+    .checkbox .person-picker .picker-label:before, .person-picker
+    .checkbox .picker-label:before {
       position: absolute;
       top: -4px;
       left: -4px;
@@ -10157,9 +10198,15 @@ form {
       content: "";
       border: 2px solid #6bac43;
       border-radius: 50%; }
-    .checkbox-inline input:checked, .checkbox-inline .person-picker .picker-label:checked, .person-picker .checkbox-inline .picker-label:checked {
+    .checkbox-inline input:checked, .checkbox-inline .person-picker .picker-label:checked, .person-picker .checkbox-inline .picker-label:checked,
+    .checkbox input:checked,
+    .checkbox .person-picker .picker-label:checked, .person-picker
+    .checkbox .picker-label:checked {
       background-color: #6bac43; }
-      .checkbox-inline input:checked:before, .checkbox-inline .person-picker .picker-label:checked:before, .person-picker .checkbox-inline .picker-label:checked:before {
+      .checkbox-inline input:checked:before, .checkbox-inline .person-picker .picker-label:checked:before, .person-picker .checkbox-inline .picker-label:checked:before,
+      .checkbox input:checked:before,
+      .checkbox .person-picker .picker-label:checked:before, .person-picker
+      .checkbox .picker-label:checked:before {
         border-color: #6bac43; }
 
 .picker-menu.dropdown-menu {
@@ -10408,17 +10455,22 @@ textarea {
     margin: 0;
     margin-right: 20px; }
   .block-configuration .block-configuration-bar {
+    width: 100% !important;
     position: absolute;
     left: 30px; }
 
 .zone-configuration.config-bar,
 .block-configuration.config-bar {
-  width: 100%;
-  margin: 20px 0; }
+  width: 100% !important;
+  margin: 20px 0;
+  z-index: 8000 !important; }
   .zone-configuration.config-bar .zoneinstance-config,
   .block-configuration.config-bar .zoneinstance-config {
     display: inline-block;
     margin-right: 10px; }
+  .zone-configuration.config-bar a,
+  .block-configuration.config-bar a {
+    position: relative !important; }
   .zone-configuration.config-bar a,
   .zone-configuration.config-bar span,
   .block-configuration.config-bar a,
@@ -10476,17 +10528,127 @@ textarea {
       max-height: 100%;
       opacity: 1; }
 
-html {
-  overflow: hidden; }
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 100%; } }
-
-hr {
-  display: none; }
-
 .shell {
   max-width: 500px;
   margin: 0 auto;
   text-align: left; }
+
+.modal-content .modal-header {
+  background-color: #303030;
+  color: #ffffff;
+  padding: 20px 30px !important; }
+  .modal-content .modal-header .js-modaldialog-close-link {
+    float: right; }
+
+.modal-content .modal-body {
+  padding: 0; }
+  .modal-content .modal-body .panel {
+    padding: 0; }
+  .modal-content .modal-body .panel-heading {
+    background-color: #dddddd;
+    padding: 20px 30px; }
+    .modal-content .modal-body .panel-heading .view-state {
+      border: none;
+      color: #505050; }
+      .modal-content .modal-body .panel-heading .view-state:hover {
+        background-color: transparent; }
+    .modal-content .modal-body .panel-heading:hover {
+      background-color: #6bac43;
+      color: #ffffff;
+      cursor: pointer; }
+      .modal-content .modal-body .panel-heading:hover .view-state {
+        color: #6bac43; }
+  .modal-content .modal-body .panel-body {
+    margin-top: 50px; }
+    .modal-content .modal-body .panel-body .help {
+      display: inline-block;
+      margin-left: 6.66667px;
+      text-decoration: none; }
+    .modal-content .modal-body .panel-body .form-group {
+      margin-bottom: 20px; }
+    .modal-content .modal-body .panel-body select,
+    .modal-content .modal-body .panel-body input,
+    .modal-content .modal-body .panel-body .person-picker .picker-label, .person-picker
+    .modal-content .modal-body .panel-body .picker-label {
+      font-family: colfax-web;
+      font-weight: 700;
+      font-size: 1.4em;
+      line-height: 1.22222;
+      width: 100%;
+      padding: 5px 30px 5px 0;
+      white-space: nowrap;
+      color: #858585;
+      border-bottom: solid 2px #858585;
+      border-radius: 0;
+      -webkit-appearance: none; }
+    .modal-content .modal-body .panel-body .checkbox-inline,
+    .modal-content .modal-body .panel-body .checkbox {
+      position: relative;
+      line-height: 20px;
+      margin: 10px 0; }
+      .modal-content .modal-body .panel-body .checkbox-inline input, .modal-content .modal-body .panel-body .checkbox-inline .person-picker .picker-label, .person-picker .modal-content .modal-body .panel-body .checkbox-inline .picker-label,
+      .modal-content .modal-body .panel-body .checkbox input,
+      .modal-content .modal-body .panel-body .checkbox .person-picker .picker-label, .person-picker
+      .modal-content .modal-body .panel-body .checkbox .picker-label {
+        width: 12px;
+        height: 12px !important;
+        margin-top: 3px;
+        margin-right: 15px;
+        border-radius: 50%;
+        padding: 0;
+        border: none;
+        visibility: visible; }
+        .modal-content .modal-body .panel-body .checkbox-inline input:before, .modal-content .modal-body .panel-body .checkbox-inline .person-picker .picker-label:before, .person-picker .modal-content .modal-body .panel-body .checkbox-inline .picker-label:before,
+        .modal-content .modal-body .panel-body .checkbox input:before,
+        .modal-content .modal-body .panel-body .checkbox .person-picker .picker-label:before, .person-picker
+        .modal-content .modal-body .panel-body .checkbox .picker-label:before {
+          position: absolute;
+          top: -4px;
+          left: -4px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          content: "";
+          border: 2px solid #6bac43;
+          border-radius: 50%; }
+        .modal-content .modal-body .panel-body .checkbox-inline input:checked, .modal-content .modal-body .panel-body .checkbox-inline .person-picker .picker-label:checked, .person-picker .modal-content .modal-body .panel-body .checkbox-inline .picker-label:checked,
+        .modal-content .modal-body .panel-body .checkbox input:checked,
+        .modal-content .modal-body .panel-body .checkbox .person-picker .picker-label:checked, .person-picker
+        .modal-content .modal-body .panel-body .checkbox .picker-label:checked {
+          background-color: #6bac43; }
+          .modal-content .modal-body .panel-body .checkbox-inline input:checked:before, .modal-content .modal-body .panel-body .checkbox-inline .person-picker .picker-label:checked:before, .person-picker .modal-content .modal-body .panel-body .checkbox-inline .picker-label:checked:before,
+          .modal-content .modal-body .panel-body .checkbox input:checked:before,
+          .modal-content .modal-body .panel-body .checkbox .person-picker .picker-label:checked:before, .person-picker
+          .modal-content .modal-body .panel-body .checkbox .picker-label:checked:before {
+            border-color: #6bac43; }
+    .modal-content .modal-body .panel-body .value-list .value-list-add {
+      border: none; }
+      .modal-content .modal-body .panel-body .value-list .value-list-add:hover {
+        background-color: transparent;
+        color: #548735; }
+    .modal-content .modal-body .panel-body .controls-row {
+      position: relative;
+      margin: 5px 0 10px; }
+      .modal-content .modal-body .panel-body .controls-row input, .modal-content .modal-body .panel-body .controls-row .person-picker .picker-label, .person-picker .modal-content .modal-body .panel-body .controls-row .picker-label {
+        font-size: 1.4em;
+        line-height: 1.22222;
+        padding: 5px 30px 5px 0; }
+      .modal-content .modal-body .panel-body .controls-row .btn {
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 0; }
+        .modal-content .modal-body .panel-body .controls-row .btn:hover {
+          background-color: transparent; }
+          .modal-content .modal-body .panel-body .controls-row .btn:hover i {
+            color: #6bac43; }
+
+.modal-content .modal-footer {
+  text-align: right;
+  background-color: #303030 !important;
+  padding: 20px 30px 10px !important;
+  margin-top: 0; }
+  .modal-content .modal-footer a {
+    float: none !important; }

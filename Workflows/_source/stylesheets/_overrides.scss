@@ -11,3 +11,11 @@ body {
 hr {
   display: none;
 }
+
+.block-configuration .config-bar {
+    width: 100% !important;
+
+    a {
+        position: relative !important;
+    }
+}

@@ -130,7 +130,10 @@
         </asp:UpdateProgress>
     </form>
 
+    <script src="<%# ResolveRockUrl("~/Scripts/ace/ace.js" ) %>"></script>
+
     <script>
+
         // Chartbeat Analytics
         var _sf_async_config = { uid: 36438, domain: '<asp:Literal ID="siteUrl" runat="server" />', useCanonical: true };
         (function () {

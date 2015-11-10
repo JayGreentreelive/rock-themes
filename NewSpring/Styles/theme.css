@@ -6718,7 +6718,8 @@ table tr td {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  margin-right: 0px;
+  margin-right: 10px;
+    margin-bottom: 10px;
 }
 .contextsetter .dropdown-toggle:hover,
 .contextsetter .dropdown-toggle:focus {

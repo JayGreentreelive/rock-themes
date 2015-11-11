@@ -220,4 +220,4 @@
 
 <script src="../../../Plugins/cc_newspring/Blocks/Dashboards/chart.js"></script>
 
-<script src="../../../Plugins/cc_newspring/audio.min.js"></script>
+<script src="../../../Plugins/cc_newspring/Scripts/audio.min.js"></script>

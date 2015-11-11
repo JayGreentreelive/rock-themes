@@ -56,10 +56,6 @@
     <!-- jQuery -->
     <script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js" ) %>"></script>
 
-    <!-- Typekit -->
-    <script src="//use.typekit.net/oby6bqi.js"></script>
-    <script>try { Typekit.load(); } catch (e) { }</script>
-
     <asp:ContentPlaceHolder ID="css" runat="server" />
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 
@@ -148,6 +144,27 @@
     </form>
 </body>
 </html>
+
+<script type="text/javascript">
+    (function (kitID) {
+        var config = {
+            kitId: kitID
+        };
+        var d = false;
+        var tk = document.createElement('script');
+        tk.src = '//use.typekit.net/' + config.kitId + '.js';
+        tk.type = 'text/javascript';
+        tk.async = 'true';
+        tk.onload = tk.onreadystatechange = function () {
+            var rs = this.readyState;
+            if (d || rs && rs != 'complete' && rs != 'loaded') return;
+            d = true;
+            try { Typekit.load(config); } catch (e) { }
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tk, s);
+    })('oby6bqi');
+</script>
 
 <script>
     $(document).ready(function(){

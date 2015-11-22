@@ -29,18 +29,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
+    <Content Include="_source\**\*.*" />
+    <Content Include="vendor\**\*.*" />
     <Content Include="Fuse\**\*.*" />
     <Content Include="KidSpring\**\*.*" />
-    <Content Include="KioskStark\**\*.*" />
     <Content Include="NewSpring\**\*.*" />
     <Content Include="Workflows\**\*.*" />
+    <Content Include="Norma" />
+    <Content Include="package.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y /I /E "$(ProjectDir)Fuse\*.*" "$(SolutionDir)RockWeb\Themes\Fuse"
 xcopy /Y /I /E "$(ProjectDir)KidSpring\*.*" "$(SolutionDir)RockWeb\Themes\KidSpring"
-xcopy /Y /I /E "$(ProjectDir)KioskStark\*.*" "$(SolutionDir)RockWeb\Themes\KioskStark"
 xcopy /Y /I /E "$(ProjectDir)NewSpring\*.*" "$(SolutionDir)RockWeb\Themes\NewSpring"
 xcopy /Y /I /E "$(ProjectDir)Workflows\*.*" "$(SolutionDir)RockWeb\Themes\Workflows"</PostBuildEvent>
   </PropertyGroup>

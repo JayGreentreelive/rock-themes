@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "norma-browser-sync": "^0.4.4",
-    "norma-less": "newspring/norma-less",
+    "norma-less": "NewSpring/norma-less",
     "norma-sass": "git://github.com/newspring/norma-sass.git#feature-windows"
   },
   "devDependencies": {

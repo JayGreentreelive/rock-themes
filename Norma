@@ -1,14 +1,19 @@
 "name": "RockThemes"
 "tasks":
     "bower":
-        "./vendor/stylesheets":
+        "./_vendor/stylesheets":
             "junction": "NewSpring/junction-framework"
             "fonts": "NewSpring/legacy-newspring-fonts"
 
+    "copy":
+        "src": "../rock/RockWeb/Styles/**/*"
+        "dest": "./_vendor/stylesheets/RockWeb"
+
     "less":
         "endpoint": "NewSpring/norma-less"
-        "src": "./NewSpring/Styles/**/*"
+        "src": "./_themes/NewSpring/Styles/**/[^_]*"
         "dest": "./NewSpring/Styles"
+        "ext": ["less"]
 
     "sass":
         "endpoint": "NewSpring/norma-sass#feature-windows"
@@ -22,7 +27,7 @@
 
     "sass-NewSpring":
         "@extend": "sass"
-        "src": "./NewSpring/_source/stylesheets/**/*"
+        "src": "./_themes/NewSpring/Styles/**/*"
         "dest": "./NewSpring/Styles"
 
     "sass-Workflows":
@@ -30,7 +35,8 @@
         "src": "./Workflows/_source/stylesheets/**/*"
         "dest": "./Workflows/Styles"
 
-    "copy":
+    "copy-Fuse":
+        "@extend": "copy"
         "src": "./Fuse/**/*"
         "dest": "../Rock/RockWeb/Themes/Fuse"
 

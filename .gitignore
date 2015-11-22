@@ -7,4 +7,6 @@ test
 /obj
 /Properties
 .norma
-/vendor
+./vendor
+/_vendor
+vendor

@@ -168,49 +168,48 @@
 </script>
 
 <script>
-    $(document).ready(function(){
 
-        // Enable sidbar sub menus
-        $("body").on("click", ".navbar-side li", function (event) {
-            if ($(this).hasClass('open')) {
-                $(this).removeClass('open')
-            } else {
-                $('.navbar-side li').removeClass('open');
-                $(this).addClass('open');
-            }
-        });
-
-        // Close sidebar if click outside of nav occurs
-        $("body").on("click", "#page-content", function (event) {
+    // Enable sidbar sub menus
+    $("body").on("click", ".navbar-side li", function (event) {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $("body").removeClass('navbar-side-open');
+        } else {
             $('.navbar-side li').removeClass('open');
+            $(this).addClass('open');
+            $("body").addClass('navbar-side-open');
+        }
+    });
+
+    // Close sidebar if click outside of nav occurs
+    $("body").on("click", "#page-content", function (event) {
+        $('.navbar-side li').removeClass('open');
+        $('body').removeClass('navbar-side-open');
+    });
+
+    // Toggle sidebar and submenu if sidebar tile is clicked
+    $('.navbar-side > li').on('click', function(){
+        if ($(this).hasClass('open')) {
             $('body').removeClass('navbar-side-open');
-        });
+        } else {
+            $('body').addClass('navbar-side-open');
+        }
+    });
 
-        // Toggle sidebar and submenu if sidebar tile is clicked
-        $('.navbar-side > li').on('click', function(){
-            if ($(this).hasClass('open')) {
-                $('body').removeClass('navbar-side-open');
-            } else {
-                $('body').addClass('navbar-side-open');
-            }
-        });
+    // Close sidebar and submenu if link is clicked within a submenu
+    $('.navbar-side > li a').on('click', function(){
+        var href = $(this).attr('href');
+        if($(this).parents('li').hasClass('open')) {
+            $('body').removeClass('navbar-side-open');
+            $(this).parents('li.open').removeClass('open');
+            setTimeout(function() {window.location = href}, 100);
+            return false;
+        };
+    });
 
-        // Close sidebar and submenu if link is clicked within a submenu
-        $('.navbar-side > li a').on('click', function(){
-            var href = $(this).attr('href');
-            if($(this).parents('li').hasClass('open')) {
-                $('body').removeClass('navbar-side-open');
-                $(this).parents('li.open').removeClass('open');
-                setTimeout(function() {window.location = href}, 100);
-                return false;
-            };
-        });
-
-        // Sidebar trigger for mobile
-        $('.nav-trigger').on('click', function(){
-            $('body').toggleClass('navbar-side-open');
-        });
-
+    // Sidebar trigger for mobile
+    $('.nav-trigger').on('click', function(){
+        $('body').toggleClass('navbar-side-open');
     });
 
     // Chartbeat Analytics

@@ -592,10 +592,19 @@ table {
     .smartsearch-type {
         position: absolute;
         top: 50%;
-        margin-top: -15px;
+        margin-top: -14px;
         right: 0px;
         font-size: @font-size-small;
         width: 160px;
+        
+        .navbar-link {
+          color: @dark-secondary;
+        }
+        
+        .dropdown-menu {
+          border-radius: 0 0 4px 4px;
+          margin: 0;
+        }
     }
 }
 
@@ -1945,6 +1954,12 @@ body {
     color: @dark-secondary;
   }
   
+  .alert-warning {
+    background-color: @alert-color;
+    border-color: darken(@alert-color, 10);
+    color: @light-primary;
+  }
+  
   .grid-filter,
   .table > thread > tr > th {
     background-color: @light-secondary;
@@ -1960,6 +1975,10 @@ body {
     &.active {
       background-color: @green-secondary;
     } 
+  }
+  
+  .label-info {
+    background-color: @green-primary;
   }
 } 
 

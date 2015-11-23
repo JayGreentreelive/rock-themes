@@ -7172,10 +7172,19 @@ table {
 .smartsearch .smartsearch-type {
 	position: absolute;
 	top: 50%;
-	margin-top: -15px;
+	margin-top: -14px;
 	right: 0px;
 	font-size: 14px;
 	width: 160px;
+}
+
+.smartsearch .smartsearch-type .navbar-link {
+	color: #555555;
+}
+
+.smartsearch .smartsearch-type .dropdown-menu {
+	border-radius: 0 0 4px 4px;
+	margin: 0;
 }
 
 .updateprogress-status {
@@ -8171,6 +8180,12 @@ body {
 	color: #555555;
 }
 
+.panel-analytics .alert-warning {
+	background-color: #c64f55;
+	border-color: #ab373d;
+	color: #ffffff;
+}
+
 .panel-analytics .grid-filter,
 .panel-analytics .table > thread > tr > th {
 	background-color: #f7f7f7;
@@ -8183,6 +8198,10 @@ body {
 
 .panel-analytics .datepicker table td.active {
 	background-color: #1c683e;
+}
+
+.panel-analytics .label-info {
+	background-color: #6bac43;
 }
 
 /*#endregion */

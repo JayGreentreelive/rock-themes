@@ -8142,6 +8142,49 @@ body {
 /*#region
 // 10. Responsive Overrides  */
 
+.panel-analytics .filter-options,
+.panel-analytics .analysis-types {
+	background-color: #f7f7f7;
+	color: #555555;
+}
+
+.panel-analytics .filter-options li,
+.panel-analytics .analysis-types li,
+.panel-analytics .filter-options h4,
+.panel-analytics .analysis-types h4 {
+	color: #555555;
+}
+
+.panel-analytics .filter-options .fa,
+.panel-analytics .analysis-types .fa {
+	color: #6bac43;
+}
+
+.panel-analytics .filter-options .fa.fa-refresh,
+.panel-analytics .analysis-types .fa.fa-refresh {
+	color: #ffffff;
+}
+
+.panel-analytics .alert-default {
+	background-color: #f7f7f7;
+	border-color: #dddddd;
+	color: #555555;
+}
+
+.panel-analytics .grid-filter,
+.panel-analytics .table > thread > tr > th {
+	background-color: #f7f7f7;
+	color: #555555;
+}
+
+.panel-analytics .datepicker table td.today {
+	background-color: #6bac43;
+}
+
+.panel-analytics .datepicker table td.active {
+	background-color: #1c683e;
+}
+
 /*#endregion */
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {

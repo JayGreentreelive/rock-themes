@@ -1919,4 +1919,48 @@ body {
     }
 }
 
+.panel-analytics {
+
+  .filter-options,
+  .analysis-types {
+    background-color: @light-secondary;
+    color: @dark-secondary;
+    
+    li, h4 {
+      color: @dark-secondary;
+    }
+    
+    .fa {
+      color: @green-primary;
+      
+      &.fa-refresh {
+        color: @light-primary;
+      }
+    }
+  }
+  
+  .alert-default {
+    background-color: @light-secondary;
+    border-color: @light-tertiary;
+    color: @dark-secondary;
+  }
+  
+  .grid-filter,
+  .table > thread > tr > th {
+    background-color: @light-secondary;
+    color: @dark-secondary;
+  }
+  
+  .datepicker table td {
+    
+    &.today {
+      background-color: @green-primary; 
+    }
+    
+    &.active {
+      background-color: @green-secondary;
+    } 
+  }
+} 
+
 /*#endregion */

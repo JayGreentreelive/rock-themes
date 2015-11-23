@@ -8192,16 +8192,16 @@ body {
 	color: #555555;
 }
 
-.panel-analytics .datepicker table td.today {
-	background-color: #6bac43;
-}
-
-.panel-analytics .datepicker table td.active {
-	background-color: #1c683e;
-}
-
 .panel-analytics .label-info {
 	background-color: #6bac43;
+}
+
+.datepicker table td.today {
+	background-color: #6bac43;
+}
+
+.datepicker table td.active {
+	background-color: #1c683e;
 }
 
 /*#endregion */

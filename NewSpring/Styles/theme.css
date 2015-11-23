@@ -8203,6 +8203,10 @@ body {
 	left: 22px;
 }
 
+.line-chart .legend table tr {
+	border-bottom: none;
+}
+
 .datepicker table td.today {
 	background-color: #6bac43;
 }

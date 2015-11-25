@@ -7031,7 +7031,8 @@ table {
 
 .group-context-setter .contextsetter,
 .schedule-context-setter .contextsetter,
-.campus-context-setter .contextsetter {
+.campus-context-setter .contextsetter,
+.date-range-context-setter .contextsetter {
 	margin-right: 30px;
 	margin-bottom: 10px;
 	margin-top: 10px;

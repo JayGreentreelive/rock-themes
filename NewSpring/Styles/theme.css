@@ -7502,6 +7502,9 @@ table tr td {
 	background-color: transparent !important;
 }
 
+.slidingdaterange-info {
+  background-color: #6bac43;
+}
 
 #content-wrapper,
 .navbar-static-side {

@@ -1,56 +1,56 @@
 "name": "RockThemes"
 "tasks":
-    "bower":
-        "./_vendor/stylesheets":
-            "junction": "NewSpring/junction-framework"
-            "fonts": "NewSpring/legacy-newspring-fonts"
+		"bower":
+				"./_vendor/stylesheets":
+						"junction": "NewSpring/junction-framework"
+						"fonts": "NewSpring/legacy-newspring-fonts"
 
-    "copy":
-        "src": "../rock/RockWeb/Styles/**/*"
-        "dest": "./_vendor/stylesheets/RockWeb"
+		"copy":
+				"src": "../rock/RockWeb/Styles/**/*"
+				"dest": "./_vendor/stylesheets/RockWeb"
 
-    "less":
-        "endpoint": "NewSpring/norma-less"
-        "src": "./_themes/NewSpring/Styles/**/[^_]*"
-        "dest": "./NewSpring/Styles"
-        "ext": ["less"]
+		"less":
+				"endpoint": "NewSpring/norma-less"
+				"src": "./_themes/NewSpring/Styles/**/[^_]*"
+				"dest": "./NewSpring/Styles"
+				"ext": ["less"]
 
-    "sass":
-        "endpoint": "NewSpring/norma-sass#feature-windows"
-        "src": "./Fuse/_source/**/*"
-        "dest": "./Fuse/Styles"
+		"sass":
+				"endpoint": "NewSpring/norma-sass#feature-windows"
+				"src": "./Fuse/_source/**/*"
+				"dest": "./Fuse/Styles"
 
-    "sass-KidSpring":
-        "@extend": "sass"
-        "src": "./KidSpring/_source/stylesheets/**/*"
-        "dest": "./KidSpring/Styles"
+		"sass-KidSpring":
+				"@extend": "sass"
+				"src": "./KidSpring/_source/stylesheets/**/*"
+				"dest": "./KidSpring/Styles"
 
-    "sass-NewSpring":
-        "@extend": "sass"
-        "src": "./_themes/NewSpring/Styles/**/*"
-        "dest": "./NewSpring/Styles"
+		"sass-NewSpring":
+				"@extend": "sass"
+				"src": "./_themes/NewSpring/Styles/**/*"
+				"dest": "./NewSpring/Styles"
 
-    "sass-Workflows":
-        "@extend": "sass"
-        "src": "./Workflows/_source/stylesheets/**/*"
-        "dest": "./Workflows/Styles"
+		"sass-Workflows":
+				"@extend": "sass"
+				"src": "./_themes/Workflows/Styles/**/*"
+				"dest": "./Workflows/Styles"
 
-    "copy-Fuse":
-        "@extend": "copy"
-        "src": "./Fuse/**/*"
-        "dest": "../Rock/RockWeb/Themes/Fuse"
+		"copy-Fuse":
+				"@extend": "copy"
+				"src": "./Fuse/**/*"
+				"dest": "../Rock/RockWeb/Themes/Fuse"
 
-    "copy-KidSpring":
-        "@extend": "copy"
-        "src": "./KidSpring/**/*"
-        "dest": "../Rock/RockWeb/Themes/KidSpring"
+		"copy-KidSpring":
+				"@extend": "copy"
+				"src": "./KidSpring/**/*"
+				"dest": "../Rock/RockWeb/Themes/KidSpring"
 
-    "copy-NewSpring":
-        "@extend": "copy"
-        "src": "./NewSpring/**/*"
-        "dest": "../Rock/RockWeb/Themes/NewSpring"
+		"copy-NewSpring":
+				"@extend": "copy"
+				"src": "./NewSpring/**/*"
+				"dest": "../Rock/RockWeb/Themes/NewSpring"
 
-    "copy-Workflows":
-        "@extend": "copy"
-        "src": "./Workflows/**/*"
-        "dest": "../Rock/RockWeb/Themes/Workflows"
+		"copy-Workflows":
+				"@extend": "copy"
+				"src": "./Workflows/**/*"
+				"dest": "../Rock/RockWeb/Themes/Workflows"

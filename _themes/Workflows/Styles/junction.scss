@@ -1,0 +1,213 @@
+@import "../../../vendor/stylesheets/fonts/font-awesome/font-awesome";
+
+@import "../../../vendor/stylesheets/junction/lib/mixins";
+
+@import "./theme";
+
+@import "../../../vendor/stylesheets/junction/lib/framework";
+
+@import "./overrides";
+
+@import "../../../_source/stylesheets/_bootstrap-grid";
+@import "../../../_source/stylesheets/_modals";
+@import "../../../_source/stylesheets/_forms";
+@import "../../../_source/stylesheets/_panel";
+@import "../../../_source/stylesheets/_rock-admin";
+
+.shell {
+	max-width: 500px;
+	margin: 0 auto;
+
+	text-align: left;
+}
+
+// Modal Form Styles
+
+.modal-content {
+
+		.modal-header {
+				background-color: $dark-color;
+				color: $light-color;
+				padding: $base-spacing-unit $base-spacing-unit*1.5 !important;
+
+				.js-modaldialog-close-link {
+						float: right;
+				}
+		}
+
+		.modal-body {
+				padding: 0;
+
+				.panel {
+						padding: 0;
+				}
+
+				.panel-heading {
+						background-color: map-get($colors, light-tertiary);
+						padding: $base-spacing-unit $base-spacing-unit*1.5; 
+
+						.view-state {
+								border: none;
+								color: map-get($colors, dark-secondary);
+
+								&:hover {
+										background-color: transparent;
+								}
+						}
+
+						&:hover {
+								background-color: $brand-color;
+								color: $light-color;
+								cursor: pointer;
+
+								.view-state {
+										color: $light-color;
+								}
+						}
+				}
+
+				.panel-body {
+						margin: $base-spacing-unit*2.5 0;
+            
+        .code-editor-container {
+          height: 200px !important;
+          
+          .ace_scroller {
+            background-color: map-get($colors, light-secondary);
+          }
+          
+          .ace_text-input {
+            z-index: 99999;
+            top: 0;
+            width: 100% !important;
+            right: 0 !important;
+            height: 100% !important;
+            cursor-color: map-get($colors, dark-priary);
+          }
+        }  
+            
+						.col-md-6,
+         .col-md-12 {
+							padding-right: $base-spacing-unit;
+						}
+
+						.help {
+								display: inline-block;
+								margin-left: $base-spacing-unit/3;
+								text-decoration: none;
+						}
+
+						.form-group {
+								margin-bottom: $base-spacing-unit;
+						}
+
+						select,
+						input {
+								font-family: colfax-web;
+								font-weight: 700;
+								font-size: 1.4em;
+								line-height: 1.22222;
+								width: 100%;
+								padding: 5px 30px 5px 0;
+								white-space: nowrap;
+								color: #858585;
+								border-bottom: solid 2px #858585;
+								border-radius: 0;
+								-webkit-appearance: none;
+						}
+
+						.checkbox-inline,
+						.checkbox {
+								position: relative;
+								line-height: 20px;
+								margin: $base-spacing-unit/2 0;
+
+								input {
+										width: 12px;
+										height: 12px !important;
+										margin-top: 3px;
+										margin-right: 15px;
+										border-radius: 50%;
+										padding: 0;
+										border: none;
+										visibility: visible;
+
+										&:before {
+												position: absolute;
+												top: -4px;
+												left: -4px;
+												display: inline-block;
+												width: 20px;
+												height: 20px;
+												content: "";
+												border: 2px solid #6bac43;
+												border-radius: 50%;
+										}
+
+										&:checked {
+											@extend %transition;
+											background-color: $brand-color;
+
+											&:before {
+												@extend %transition;
+												border-color: $brand-color;
+											}
+										}
+								}
+						}
+						.value-list {
+
+								.value-list-add {
+										border: none;
+              padding-left: 0;
+
+										&:hover {
+												background-color: transparent;
+												color: darken($brand-color, 10);
+										}
+								}
+						}
+
+						.controls-row {
+								position: relative;
+								margin: $base-spacing-unit/4 0 $base-spacing-unit/2;
+
+								input {
+										font-size: 1.4em;
+										line-height: 1.22222;
+										padding: 5px 30px 5px 0;
+								}
+
+								.btn {
+										padding: 0;
+										border: none;
+										display: inline-block;
+										position: absolute;
+										top: $base-spacing-unit/2;
+										right: $base-spacing-unit/2;
+
+										&:hover {
+												background-color: transparent;
+
+												i {
+														color: $brand-color;
+												}
+										}
+								}
+						}
+				}
+		}
+		
+  .modal-footer {
+    text-align: right;
+    background-color: $dark-color !important;
+    padding: $base-spacing-unit $base-spacing-unit*1.5 $base-spacing-unit/2 !important;
+    margin-top: 0 !important;
+  
+    a {
+      float: none !important;
+      @extend .btn--filed;
+      @extend .btn--light;
+    }
+  }
+}

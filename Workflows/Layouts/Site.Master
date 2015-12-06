@@ -66,6 +66,9 @@
     <link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/junction.css", true) %>" />
 
     <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js" ) %>"></script>
+    
+    <!-- jQuery -->
+    <script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js" ) %>"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 

@@ -1,56 +1,121 @@
 "name": "RockThemes"
 "tasks":
-		"bower":
-				"./_vendor/stylesheets":
-						"junction": "NewSpring/junction-framework"
-						"fonts": "NewSpring/legacy-newspring-fonts"
+  "bower":
+    "./.remote/Styles":
+      "junction": "NewSpring/junction-framework"
+      "fonts": "NewSpring/legacy-newspring-fonts"
+  
+  "copy":
+    "src": "../rock/RockWeb/Styles/**/*"
+    "dest": "./.remote/Styles/RockWeb"
+  
+  ####
+  
+  # Fuse Tasks
+  
+  "sass":
+    "endpoint": "NewSpring/norma-sass#feature-windows"
+    "src": "./.themes/Fuse/Styles/**/*"
+    "dest": "./compiled/Fuse/Styles"
+    
+  "less":
+    "endpoint": "NewSpring/norma-less"
+    "src": "./.themes/Fuse/Styles/**/[^_]*"
+    "dest": "./compiled/Fuse/Styles"
+    
+  "assets-Fuse":
+    "@extend": "copy"
+    "src": "./.themes/Fuse/Assets/**/*"
+    "dest": "./compiled/Fuse/Assets"
+    
+  "layouts-Fuse":
+    "@extend": "copy"
+    "src": "./.themes/Fuse/Layouts/**/*"
+    "dest": "./compiled/Fuse/Layouts"
 
-		"copy":
-				"src": "../rock/RockWeb/Styles/**/*"
-				"dest": "./_vendor/stylesheets/RockWeb"
-
-		"less":
-				"endpoint": "NewSpring/norma-less"
-				"src": "./_themes/NewSpring/Styles/**/[^_]*"
-				"dest": "./NewSpring/Styles"
-				"ext": ["less"]
-
-		"sass":
-				"endpoint": "NewSpring/norma-sass#feature-windows"
-				"src": "./Fuse/_source/**/*"
-				"dest": "./Fuse/Styles"
-
-		"sass-KidSpring":
-				"@extend": "sass"
-				"src": "./KidSpring/_source/stylesheets/**/*"
-				"dest": "./KidSpring/Styles"
-
-		"sass-NewSpring":
-				"@extend": "sass"
-				"src": "./_themes/NewSpring/Styles/**/*"
-				"dest": "./NewSpring/Styles"
-
-		"sass-Workflows":
-				"@extend": "sass"
-				"src": "./_themes/Workflows/Styles/**/*"
-				"dest": "./Workflows/Styles"
-
-		"copy-Fuse":
-				"@extend": "copy"
-				"src": "./Fuse/**/*"
-				"dest": "../Rock/RockWeb/Themes/Fuse"
-
-		"copy-KidSpring":
-				"@extend": "copy"
-				"src": "./KidSpring/**/*"
-				"dest": "../Rock/RockWeb/Themes/KidSpring"
-
-		"copy-NewSpring":
-				"@extend": "copy"
-				"src": "./NewSpring/**/*"
-				"dest": "../Rock/RockWeb/Themes/NewSpring"
-
-		"copy-Workflows":
-				"@extend": "copy"
-				"src": "./Workflows/**/*"
-				"dest": "../Rock/RockWeb/Themes/Workflows"
+  "copy-Fuse":
+    "@extend": "copy"
+    "src": "./Fuse/**/*"
+    "dest": "../Rock/RockWeb/Themes/Fuse"
+  
+  ####
+  
+  # KidSpring Tasks
+  
+  "less-KidSpring":
+    "@extend": "less"
+    "src": "./.themes/KidSpring/Styles/**/[^_]*"
+    "dest": "./compiled/KidSpring/Styles"
+  
+  "sass-KidSpring":
+    "@extend": "sass"
+    "src": "./.themes/KidSpring/Styles/**/*"
+    "dest": "./compiled/KidSpring/Styles"
+    
+  "assets-KidSpring":
+    "@extend": "copy"
+    "src": "./.themes/KidSpring/Assets/**/*"
+    "dest": "./compiled/KidSpring/Assets"
+    
+  "layouts-KidSpring":
+    "@extend": "copy"
+    "src": "./.themes/KidSpring/Layouts/**/*"
+    "dest": "./compiled/KidSpring/Layouts"
+  
+  "copy-KidSpring":
+    "@extend": "copy"
+    "src": "./compiled/KidSpring/**/*"
+    "dest": "../Rock/RockWeb/Themes/KidSpring"
+  
+  ####
+  
+  # NewSpring Tasks
+  
+  "less-NewSpring":
+    "@extend": "less"
+    "src": "./.themes/NewSpring/Styles/**/[^_]*"
+    "dest": "./compiled/NewSpring/Styles"
+  
+  "sass-NewSpring":
+    "@extend": "sass"
+    "src": "./.themes/NewSpring/Styles/**/*"
+    "dest": "./compiled/NewSpring/Styles"
+    
+  "assets-NewSpring":
+    "@extend": "copy"
+    "src": "./.themes/NewSpring/Assets/**/*"
+    "dest": "./compiled/NewSpring/Assets"
+    
+  "layouts-NewSpring":
+    "@extend": "copy"
+    "src": "./.themes/NewSpring/Layouts/**/*"
+    "dest": "./compiled/NewSpring/Layouts"
+  
+  "copy-NewSpring":
+    "@extend": "copy"
+    "src": "./compiled/NewSpring/**/*"
+    "dest": "../Rock/RockWeb/Themes/NewSpring"
+  
+  ####
+  
+  # Workflows Tasks
+  
+  "sass-Workflows":
+    "@extend": "sass"
+    "src": "./.themes/Workflows/Styles/**/*"
+    "dest": "./compiled/Workflows/Styles"
+    
+  "assets-Workflows":
+    "@extend": "copy"
+    "src": "./.themes/Workflows/Assets/**/*"
+    "dest": "./compiled/Workflows/Assets"
+    
+  "layouts-Workflows":
+    "@extend": "copy"
+    "src": "./.themes/Workflows/Layouts/**/*"
+    "dest": "./compiled/Workflows/Layouts"
+  
+  "copy-Workflows":
+    "@extend": "copy"
+    "src": "./Workflows/**/*"
+    "dest": "../Rock/RockWeb/Themes/Workflows"

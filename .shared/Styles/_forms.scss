@@ -1,0 +1,524 @@
+form {
+  height: 100vh;
+}
+
+.form-group {
+  margin-bottom: $base-spacing-unit*1.5;
+
+  .input-group {
+    position: relative;
+
+    i {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.rock-drop-down-list,
+.campus-picker {
+  position: relative;
+
+  &:before,
+  &:before {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+
+    color: map-get($colors, dark-tertiary);
+  }
+
+
+
+  &:before {
+    content: "\f0d7";
+
+    font-family: "FontAwesome";
+  }
+}
+
+
+.checkbox-inline,
+.checkbox {
+  display: block;
+
+  width: 100%;
+  margin: $base-spacing-unit/2 0;
+  padding: 5px 0;
+
+  &:after {
+    display: none;
+    visibility: hidden;
+  }
+
+  input {
+    @extend %transition;
+
+    position: relative;
+    top: -3px;
+    left: 3px;
+
+    display: inline-block;
+    visibility: visible;
+
+    width: 12px;
+    height: 12px;
+    max-height: none;
+    margin-top: 3px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 3px;
+    padding: 0;
+
+    opacity: 1;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+
+    -webkit-appearance: none;
+
+    &:before {
+      @extend %transition;
+
+      position: absolute;
+      top: -4px;
+      left: -4px;
+
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+
+      content: "";
+
+      border: 2px solid $brand-color;
+      border-radius: 50%;
+    }
+
+    &:checked {
+      @extend %transition;
+
+      background-color: $brand-color;
+      &:before {
+        @extend %transition;
+
+        border-color: $brand-color;
+      }
+    }
+  }
+}
+
+.picker-menu {
+  &.dropdown-menu {
+    margin: $base-spacing-unit 0;
+
+    h4 {
+      @extend %h6;
+
+      margin-top: $base-spacing-unit;
+      margin-bottom: $base-spacing-unit;
+    }
+  }
+}
+
+.person-picker {
+  .picker-menu {
+    padding: $base-spacing-unit;
+
+    background-color: map-get($colors, light-secondary);
+  }
+  .picker-select {
+    list-style: none;
+  }
+
+  .picker-select-item {
+    margin-bottom: $base-spacing-unit/2;
+
+    .radio {
+      display: block;
+
+      width: 100%;
+      margin: $base-spacing-unit/4 0;
+      padding: 5px 0;
+
+      label {
+        &:after {
+          display: none;
+        }
+      }
+
+      input {
+        @extend %transition;
+
+        position: relative;
+        top: -3px;
+        left: 3px;
+
+        display: inline-block;
+
+        width: 12px;
+        height: 12px;
+        margin-top: 3px;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 3px;
+        padding: 0;
+
+        border: 0;
+        border-radius: 50%;
+        background-color: transparent;
+
+        -webkit-appearance: none;
+
+        &:before {
+          @extend %transition;
+
+          position: absolute;
+          top: -4px;
+          left: -4px;
+
+          display: inline-block;
+
+          width: 20px;
+          height: 20px;
+
+          content: "";
+
+          border: 2px solid $brand-color;
+          border-radius: 50%;
+        }
+
+        &:checked {
+          @extend %transition;
+
+          background-color: $brand-color;
+          &:before {
+            @extend %transition;
+
+            border-color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  .picker-actions {
+    margin-top: $base-spacing-unit*2;
+
+    .btn {
+      display: inline-block;
+
+      margin-bottom: 0;
+      padding: $base-spacing-unit/2 $base-spacing-unit $base-spacing-unit/2 0;
+
+      vertical-align: middle;
+
+      border: 0;
+
+      font-size: $base-font-size;
+      font-weight: 500;
+
+      &:after {
+        display: inline-block;
+
+        padding-left: 10px;
+
+        content: "\f054";
+        vertical-align: middle;
+
+        color: $brand-color;
+
+        font-family: "FontAwesome";
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        color: darken($brand-color, 10);
+        background-color: transparent;
+
+        &:after {
+          color: darken($brand-color, 10);
+        }
+      }
+    }
+  }
+}
+
+.control-label {
+  @extend %h5;
+
+  color: map-get($colors , dark-secondary);
+
+  small {
+    @extend p;
+
+    color: map-get($colors, dark-tertiary);
+
+    font-size: .85em;
+    line-height: .95em;
+  }
+
+  .help {
+    position: relative;
+    top: -4px;
+
+    padding-left: 6px;
+
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+select,
+input,
+textarea {
+  color: $dark-color;
+};
+
+select {
+  position: relative;
+  z-index: 100;
+  background-image: url('/Themes/Workflows/assets/images/drop-down.png');
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: $base-font-size*.75;
+
+  &:focus {
+    border-color: $brand-color;
+    outline: none;
+  }
+}
+
+.datepicker {
+  position: fixed;
+
+  background-color: map-get($colors, light-primary);
+
+  thead,
+  tfoot {
+    background-color: map-get($colors , light-tertiary);
+
+    th {
+      padding: 4px;
+
+      &.prev,
+      &.next,
+      &.datepicker-switch,
+      &.today {
+        &:hover {
+          cursor: pointer;
+
+          color: $light-color;
+          background-color: $brand-color;
+        }
+      }
+    }
+  }
+
+  td {
+    padding: 8px;
+
+    &.day {
+      &:hover {
+        cursor: pointer;
+
+        color: $light-color;
+        background-color: $brand-color;
+      }
+    }
+  }
+
+  .month,
+  .year {
+    padding: 5px;
+  }
+}
+
+.person-picker {
+  position: relative;
+
+  .picker-label {
+    @extend input;
+
+    height: 28px;
+
+    .fa-caret-down {
+      display: none;
+    }
+  }
+
+  .picker-select-none {
+    position: absolute;
+    top: 38px;
+    right: 0;
+
+    display: block;
+
+    opacity: 1;
+  }
+
+  .picker-actions {
+    a {
+      @extend %breadcrumb-text;
+    }
+  }
+
+  .fa-user {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.required {
+  label {
+    position: relative;
+
+    &:after {
+      display: inline-block;
+
+      padding-left: 4px;
+
+      content: "\f005";
+      vertical-align: top;
+
+      color: map-get($colors, alert);
+
+      font-family: "FontAwesome";
+      font-size: $base-font-size*.55;
+    }
+  }
+}
+
+.has-error {
+  * {
+    color: map-get($colors, alert);
+    border-color: map-get($colors, alert);
+  }
+}
+
+textarea {
+  display: block;
+
+  width: 100%;
+  height: $base-font-size*6;
+
+  border-bottom: 2px solid map-get($colors, dark-tertiary);
+
+  font-size: $base-font-size;
+
+  &:focus {
+    border-color: $brand-color;
+  }
+}
+
+.email-box {
+  i {
+    visibility: hidden;
+  }
+}
+
+.rock-radio-button-list {
+  .controls {
+    margin-top: $base-spacing-unit;
+  }
+
+  .radio-inline {
+    display: block;
+
+    width: 100%;
+    margin: $base-spacing-unit/4 0;
+    padding: 5px 0;
+
+    input {
+      @extend %transition;
+
+      position: relative;
+      top: -3px;
+      left: 3px;
+
+      display: inline-block;
+
+      width: 12px;
+      height: 12px;
+      margin-top: 3px;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 3px;
+      padding: 0;
+
+      border: 0;
+      border-radius: 50%;
+      background-color: transparent;
+
+      -webkit-appearance: none;
+
+      &:before {
+        @extend %transition;
+
+        position: absolute;
+        top: -4px;
+        left: -4px;
+
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+
+        content: "";
+
+        border: 2px solid $brand-color;
+        border-radius: 50%;
+      }
+
+      &:checked {
+        @extend %transition;
+
+        background-color: $brand-color;
+        &:before {
+          @extend %transition;
+
+          border-color: $brand-color;
+        }
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.alert-danger {
+  padding: $base-spacing-unit 0;
+
+  color: map-get($colors, alert);
+
+  font-size: 1.5em;
+
+  ul {
+    list-style-position: inside;
+
+    font-size: initial;
+
+    li {
+      padding-bottom: $base-spacing-unit/2;
+    }
+
+    li:first-of-type {
+      padding-top: $base-spacing-unit;
+    }
+
+    li:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -33,23 +33,18 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="_source\**\*.*" />
-    <Content Include="vendor\**\*.*" />
-    <Content Include="Fuse\**\*.*" />
-    <Content Include="KidSpring\**\*.*" />
-    <Content Include="NewSpring\**\*.*" />
-    <Content Include="Workflows\**\*.*" />
+    <Content Include=".\.remote\**\*.*" />
+    <Content Include=".\.shared\**\*.*" />
+    <Content Include=".\.themes\**\*.*" />
+    <Content Include=".\compiled\**\*.*" />
     <Content Include="Norma" />
     <Content Include="package.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y /I /E "$(ProjectDir)Fuse\*.*" "$(SolutionDir)RockWeb\Themes\Fuse"
-xcopy /Y /I /E "$(ProjectDir)KidSpring\*.*" "$(SolutionDir)RockWeb\Themes\KidSpring"
-xcopy /Y /I /E "$(ProjectDir)NewSpring\*.*" "$(SolutionDir)RockWeb\Themes\NewSpring"
-xcopy /Y /I /E "$(ProjectDir)Workflows\*.*" "$(SolutionDir)RockWeb\Themes\Workflows"</PostBuildEvent>
+    <PostBuildEvent>xcopy /Y /I /E "$(ProjectDir)compiled\*.*" "$(SolutionDir)RockWeb\Themes"</PostBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

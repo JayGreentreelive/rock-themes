@@ -5,6 +5,7 @@
 @import "./theme";
 
 @import "../../../.remote/Styles/junction/lib/framework";
+@import "../../../.shared/Styles/_tables";
 
 @import "./overrides";
 
@@ -20,6 +21,7 @@
 
 	text-align: left;
 }
+
 .logo img {
 	margin-bottom: $base-spacing-unit*2;
 }

@@ -117,5 +117,5 @@
   
   "copy-Workflows":
     "@extend": "copy"
-    "src": "./Workflows/**/*"
+    "src": "./compiled/Workflows/**/*"
     "dest": "../Rock/RockWeb/Themes/Workflows"

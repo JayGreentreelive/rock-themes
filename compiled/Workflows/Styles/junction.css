@@ -10343,7 +10343,6 @@ Copyright (c) 2012 Dan Eden*/
   max-height: none !important;
   height: auto !important; }
   .modal-open .modal-scrollable .modal-content * {
-    height: auto !important;
     max-height: none !important;
     opacity: 1 !important; }
   .modal-open .modal-scrollable .modal-content .modal-header,

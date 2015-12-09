@@ -459,6 +459,11 @@ Copyright (c) 2012 Dan Eden*/
 
 // Modal Helpers
 .modal-open {
+  
+  .modal {
+    z-index: 300;
+  }
+  
   .modal-scrollable {
     #modal-popup {
       height: inherit;

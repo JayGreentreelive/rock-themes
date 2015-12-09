@@ -10327,6 +10327,9 @@ Copyright (c) 2012 Dan Eden*/
 .modal-content {
   border: none; }
 
+.modal-open .modal {
+  z-index: 300; }
+
 .modal-open .modal-scrollable #modal-popup {
   height: inherit;
   max-height: 100%; }

@@ -23,6 +23,7 @@
 	text-align: left;
 }
 
+
 .logo img {
 	margin-bottom: $base-spacing-unit * 2;
 }
@@ -30,7 +31,8 @@
 // Tables
 
 .table-responsive {
-  margin: $base-spacing-unit * 2 $base-spacing-unit 0;
+  margin: $base-spacing-unit * 2 0 0 $base-spacing-unit;
+  overflow-x: scroll;
 }
 
 .table {
@@ -43,6 +45,21 @@
     a {
       color: inherit;
       text-decoration: none;
+      display: block;
+      
+      &:after {
+        font-family: 'FontAwesome';
+        content: '\f0dc';
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        font-size: 0.8em;
+        top: 0.1em;
+      }
+      
+      &:hover {
+        color: $brand-color;
+      }
     }
     
     th {
@@ -134,7 +151,7 @@
 
 						.form-group {
 								margin-bottom: $base-spacing-unit;
-						}
+        }
 
 						select,
 						input {
@@ -145,8 +162,8 @@
 								width: 100%;
 								padding: 5px 30px 5px 0;
 								white-space: nowrap;
-								color: #858585;
-								border-bottom: solid 2px #858585;
+								color: map-get($colors, dark-secondary);
+								border-bottom: solid 2px map-get($colors, dark-secondary);
 								border-radius: 0;
 								-webkit-appearance: none;
 						}

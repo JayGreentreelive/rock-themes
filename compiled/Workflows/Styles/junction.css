@@ -9859,7 +9859,12 @@ html.modal--opened {
  */
 table {
   width: 100%;
-  border-spacing: 0; }
+  border-spacing: 0;
+  color: #303030;
+  font-family: colfax-web;
+  font-weight: 700;
+  line-height: 1.22222;
+  color: #505050; }
 
 th,
 td {
@@ -9992,18 +9997,24 @@ td {
   .table-bordered td:empty {
     border: none; }
 
-.table-bordered thead tr:last-child th {
-  border-bottom-width: 2px; }
-
-.table-bordered tbody tr th:last-of-type {
-  border-right-width: 2px; }
+.table-bordered td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #303030; }
+  .table-bordered td:first-child {
+    border-width: 0 2px 2px; }
+  .table-bordered td:not(:first-child) {
+    border-width: 0 2px 2px 0; }
+  .table-bordered td:not(:last-child) {
+    border-width: 0 2px 2px 2px; }
 
 /**
  * Striped tables
  */
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #dddddd;
-  /* Override this color in your theme stylesheet */ }
+  background-color: #f7f7f7;
+  /* Override this color in your theme stylesheet */
+  color: #505050; }
 
 /**
  * Data table
@@ -10833,7 +10844,8 @@ textarea {
   margin-bottom: 40px; }
 
 .table-responsive {
-  margin: 40px 20px 0; }
+  margin: 40px 0 0 20px;
+  overflow-x: scroll; }
 
 .table thead {
   background-color: #303030;
@@ -10841,7 +10853,18 @@ textarea {
   text-decoration: none; }
   .table thead a {
     color: inherit;
-    text-decoration: none; }
+    text-decoration: none;
+    display: block; }
+    .table thead a:after {
+      font-family: 'FontAwesome';
+      content: '\f0dc';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: 0.8em;
+      top: 0.1em; }
+    .table thead a:hover {
+      color: #6bac43; }
   .table thead th {
     border: none;
     text-align: left !important; }
@@ -10906,8 +10929,8 @@ textarea {
       width: 100%;
       padding: 5px 30px 5px 0;
       white-space: nowrap;
-      color: #858585;
-      border-bottom: solid 2px #858585;
+      color: #505050;
+      border-bottom: solid 2px #505050;
       border-radius: 0;
       -webkit-appearance: none; }
     .modal-content .modal-body .panel-body .checkbox-inline,

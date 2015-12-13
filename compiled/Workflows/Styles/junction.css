@@ -10007,6 +10007,8 @@ td {
     border-width: 0 2px 2px; }
   .table-bordered td:not(:first-child) {
     border-width: 0 0 2px 0; }
+  .table-bordered td:last-child {
+    border-width: 0 2px 2px; }
   .table-bordered td:not(:last-child) {
     border-width: 0 2px 2px 2px; }
 

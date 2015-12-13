@@ -158,13 +158,15 @@ td{
       border-width: 2px;
       border-style: solid;
       border-color: map-get($colors, dark-primary);
+      font-weight: 500;
+      font-size: 0.875em;
       
       &:first-child {
         border-width: 0 2px 2px;
       }
       
       &:not(:first-child) {
-        border-width: 0 2px 2px 0;
+        border-width: 0 0 2px 0;
       }
       
       &:not(:last-child) {

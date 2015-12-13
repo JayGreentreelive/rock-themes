@@ -9,7 +9,7 @@
 
 @import "./overrides";
 
-@import "../../../.shared/Styles/_bootstrap-grid";
+// @import "../../../.shared/Styles/_bootstrap-grid";
 @import "../../../.shared/Styles/_modals";
 @import "../../../.shared/Styles/_forms";
 @import "../../../.shared/Styles/_panel";
@@ -24,7 +24,36 @@
 }
 
 .logo img {
-	margin-bottom: $base-spacing-unit*2;
+	margin-bottom: $base-spacing-unit * 2;
+}
+
+// Tables
+
+.table-responsive {
+  margin: $base-spacing-unit * 2 $base-spacing-unit 0;
+}
+
+.table {
+  
+  thead {
+    background-color: map-get($colors, dark-primary);
+    color: $light-color;
+    text-decoration: none;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    th {
+      border: none;
+      text-align: left !important;
+    }
+  }
+  
+  tr {
+    border-color: map-get($colors, dark-primary);
+  }
 }
 
 // Modal Form Styles

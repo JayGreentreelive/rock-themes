@@ -8,6 +8,10 @@
   margin-left: 0;
 }
 
+.grid > .table-responsive {
+  margin-left: $base-spacing-unit;
+}
+
 // Extra small devices
 // Phones (<768px)
 .col-xs-1 {

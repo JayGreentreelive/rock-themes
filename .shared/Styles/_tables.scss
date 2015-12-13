@@ -161,20 +161,20 @@ td{
       font-weight: 500;
       font-size: 0.875em;
       
-      &:first-child {
-        border-width: 0 2px 2px;
-      }
-      
       &:not(:first-child) {
         border-width: 0 0 2px 0;
       }
       
-      &:last-child {
+      &:not(:last-child) {
+        border-width: 0 2px 2px 0;
+      }
+      
+      &:first-child {
         border-width: 0 2px 2px;
       }
       
-      &:not(:last-child) {
-        border-width: 0 2px 2px 2px;
+      &:last-child {
+        border-width: 0 2px 2px;
       }
     }
 }

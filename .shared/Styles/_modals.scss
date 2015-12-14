@@ -461,10 +461,12 @@ Copyright (c) 2012 Dan Eden*/
 .modal-open {
   
   .modal {
-    z-index: 300;
+    z-index: 9999;
   }
   
   .modal-scrollable {
+    z-index: 9000;
+    
     #modal-popup {
       height: inherit;
       max-height: 100%;

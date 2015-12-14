@@ -139,6 +139,36 @@ section {
 
 }
 
+// Loader
+
+#updateProgress {
+  z-index: 200;
+  
+  .modal-backdrop {
+    opacity: 0.8;
+  }
+}
+
+.spinner {
+  
+  @include newspring--icon($base-spacing-unit * 4, map-get($colors, primary));
+  position: absolute;
+  padding: 0;
+  
+  // &:before,
+  // &:after {
+  //   display: none;
+  // }
+  
+  & > div {
+    display: none;
+  }
+  
+  & > div:not(:last-child) {
+    margin-right: $half-spacing-unit/2;
+  }
+}
+
 // Modal Form Styles
 
 .modal-content {

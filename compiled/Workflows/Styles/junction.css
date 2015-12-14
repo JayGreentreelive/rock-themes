@@ -10802,6 +10802,9 @@ textarea {
   z-index: 4;
   border-radius: 120px;
   padding: 25px 10px; }
+  .spinner:before {
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out; }
   .spinner > div {
     background-color: #fff;
     height: 100%;
@@ -10839,6 +10842,22 @@ textarea {
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 /*
     NewSpring Web Core Styles -- $NEWSPRING-ICON
@@ -10993,6 +11012,81 @@ textarea {
 
 .table tr {
   border-color: #303030; }
+
+#updateProgress {
+  z-index: 200; }
+  #updateProgress .modal-backdrop {
+    opacity: 0.8; }
+
+.spinner {
+  background-color: #6bac43;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-indent: -99999;
+  font-size: 0;
+  border-radius: 50% 47% 0 47%;
+  position: absolute;
+  padding: 0; }
+  .spinner:before {
+    background-color: white; }
+  .spinner:after {
+    background-color: #6bac43; }
+  .spinner.outlined {
+    background-color: transparent;
+    border-color: #6bac43; }
+    .spinner.outlined:before {
+      background-color: transparent;
+      border-color: #6bac43; }
+    .spinner.outlined:after {
+      background-color: transparent;
+      border-color: #6bac43;
+      border-bottom-color: transparent; }
+  .spinner.fluid {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%; }
+  .spinner.icon--small {
+    width: 40px;
+    height: 40px; }
+  .spinner.icon--large {
+    width: 160px;
+    height: 160px; }
+  .spinner.outlined {
+    border-width: 3px;
+    border-style: solid; }
+  .spinner:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 47.5%;
+    padding-bottom: 45.625%;
+    height: auto;
+    margin-top: -20.625%;
+    margin-left: -21.25%;
+    border-radius: 0 36% 0 0; }
+  .spinner:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    height: 33.75%;
+    margin-top: -8.75%;
+    margin-left: -5%;
+    border-radius: 50% 50% 0 0/25% 25% 0 0; }
+  .spinner.outlined:before {
+    border-width: 3px;
+    border-style: solid; }
+  .spinner.outlined:after {
+    border-width: 3px;
+    border-style: solid; }
+  .spinner > div {
+    display: none; }
+  .spinner > div:not(:last-child) {
+    margin-right: 5px; }
 
 .modal-content .modal-header {
   background-color: #303030;

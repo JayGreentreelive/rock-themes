@@ -8637,72 +8637,72 @@ html.modal--opened {
   .anchored-soft-half-left {
     padding-left: 10px; } }
 
-.soft-half-ends, .soft-double-ends {
+.soft-half-ends {
   padding-top: 10px;
   padding-bottom: 10px; }
 
 @media screen and (max-width: 480px) {
-  .palm-soft-half-ends, .palm-soft-double-ends {
+  .palm-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .palm-wide-soft-half-ends, .palm-wide-soft-double-ends {
+  .palm-wide-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 481px) {
-  .palm-wide-and-up-soft-half-ends, .palm-wide-and-up-soft-double-ends {
+  .palm-wide-and-up-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (max-width: 768px) {
-  .handheld-soft-half-ends, .handheld-soft-double-ends {
+  .handheld-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .lap-soft-half-ends, .lap-soft-double-ends {
+  .lap-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 769px) {
-  .lap-and-up-soft-half-ends, .lap-and-up-soft-double-ends {
+  .lap-and-up-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .lap-wide-soft-half-ends, .lap-wide-soft-double-ends {
+  .lap-wide-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1025px) {
-  .lap-wide-and-up-soft-half-ends, .lap-wide-and-up-soft-double-ends {
+  .lap-wide-and-up-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  .portable-soft-half-ends, .portable-soft-double-ends {
+  .portable-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1281px) and (max-width: 1680px) {
-  .desk-soft-half-ends, .desk-soft-double-ends {
+  .desk-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1281px) {
-  .desk-and-up-soft-half-ends, .desk-and-up-soft-double-ends {
+  .desk-and-up-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1681px) {
-  .desk-wide-soft-half-ends, .desk-wide-soft-double-ends {
+  .desk-wide-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 1281px) {
-  .anchored-soft-half-ends, .anchored-soft-double-ends {
+  .anchored-soft-half-ends {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
@@ -9050,72 +9050,72 @@ html.modal--opened {
   .anchored-soft-double-left {
     padding-left: 40px; } }
 
-.soft-half-ends, .soft-double-ends {
+.soft-double-ends {
   padding-top: 40px;
   padding-bottom: 40px; }
 
 @media screen and (max-width: 480px) {
-  .palm-soft-half-ends, .palm-soft-double-ends {
+  .palm-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .palm-wide-soft-half-ends, .palm-wide-soft-double-ends {
+  .palm-wide-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 481px) {
-  .palm-wide-and-up-soft-half-ends, .palm-wide-and-up-soft-double-ends {
+  .palm-wide-and-up-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (max-width: 768px) {
-  .handheld-soft-half-ends, .handheld-soft-double-ends {
+  .handheld-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .lap-soft-half-ends, .lap-soft-double-ends {
+  .lap-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 769px) {
-  .lap-and-up-soft-half-ends, .lap-and-up-soft-double-ends {
+  .lap-and-up-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .lap-wide-soft-half-ends, .lap-wide-soft-double-ends {
+  .lap-wide-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1025px) {
-  .lap-wide-and-up-soft-half-ends, .lap-wide-and-up-soft-double-ends {
+  .lap-wide-and-up-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  .portable-soft-half-ends, .portable-soft-double-ends {
+  .portable-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1281px) and (max-width: 1680px) {
-  .desk-soft-half-ends, .desk-soft-double-ends {
+  .desk-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1281px) {
-  .desk-and-up-soft-half-ends, .desk-and-up-soft-double-ends {
+  .desk-and-up-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1681px) {
-  .desk-wide-soft-half-ends, .desk-wide-soft-double-ends {
+  .desk-wide-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
 @media screen and (min-width: 1281px) {
-  .anchored-soft-half-ends, .anchored-soft-double-ends {
+  .anchored-soft-double-ends {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
@@ -11003,6 +11003,20 @@ textarea {
 
 .modal-content .modal-body {
   padding: 0; }
+  .modal-content .modal-body .picker .picker-label {
+    text-decoration: none; }
+  .modal-content .modal-body .picker ul {
+    list-style: none;
+    margin-bottom: 20px; }
+  .modal-content .modal-body .picker li:not(:last-child) {
+    padding-bottom: 10px; }
+  .modal-content .modal-body .picker .btn {
+    padding: 10px 20px; }
+    .modal-content .modal-body .picker .btn:not(:last-child) {
+      margin-right: 20px; }
+      @media screen and (max-width: 768px) {
+        .modal-content .modal-body .picker .btn:not(:last-child) {
+          margin-right: 0; } }
   .modal-content .modal-body .panel {
     padding: 0; }
   .modal-content .modal-body .panel-heading {

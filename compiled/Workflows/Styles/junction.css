@@ -9998,19 +9998,13 @@ td {
     border: none; }
 
 .table-bordered td {
-  border-width: 2px;
+  border-width: 0 2px 2px 2px;
   border-style: solid;
   border-color: #303030;
   font-weight: 500;
   font-size: 0.875em; }
-  .table-bordered td:first-child {
-    border-width: 0 2px 2px; }
   .table-bordered td:not(:first-child) {
-    border-width: 0 0 2px 0; }
-  .table-bordered td:last-child {
-    border-width: 0 2px 2px; }
-  .table-bordered td:not(:last-child) {
-    border-width: 0 2px 2px 2px; }
+    border-width: 0 2px 2px 0; }
 
 /**
  * Striped tables

@@ -10803,8 +10803,8 @@ textarea {
   border-radius: 120px;
   padding: 25px 10px; }
   .spinner:before {
-    -webkit-animation: pulse 2s infinite ease-in-out;
-    animation: pulse 2s infinite ease-in-out; }
+    -webkit-animation: pulse 3s infinite ease-in-out;
+    animation: pulse 3s infinite ease-in-out; }
   .spinner > div {
     background-color: #fff;
     height: 100%;
@@ -10981,6 +10981,9 @@ textarea {
 
 .logo img {
   margin-bottom: 40px; }
+
+#map_wrapper {
+  margin-top: 40px; }
 
 .table-responsive {
   margin: 40px 0 0 20px;

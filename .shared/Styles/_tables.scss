@@ -67,9 +67,10 @@ table{
 }
 th,
 td{
-    padding: $base-spacing-unit $base-spacing-unit / 4;
+    padding: $base-spacing-unit * 0.75 $base-spacing-unit / 4;
+    
     @media screen and (min-width:480px){
-        padding:$half-spacing-unit;
+        padding: $base-spacing-unit * 0.75 $half-spacing-unit;
     }
     text-align:left;
 }

@@ -7957,6 +7957,10 @@ body {
 	overflow: hidden;
 }
 
+.input-width-md.date {
+	width: 160px;
+}
+
 .logo {
 	display: none;
 	float: left;

@@ -14,6 +14,7 @@
 @import "../../../.remote/Styles/RockWeb/_store.less";
 @import "../../../.remote/Styles/RockWeb/_rock-variables.less";
 @import "./_variables.less";
+@import "./_list-as-blocks.less";
 @import "./_print.less";
 
 /*
@@ -659,9 +660,10 @@ table {
 
         li {
             width: 100%;
-            margin: 0px;
+            // margin: 0px;
             border-radius: 0px;
             border: 0px;
+            // margin: @base-spacing-unit;
 
             a {
                 background-color: darken(@light-secondary, 1);
@@ -1855,82 +1857,15 @@ body {
     }
 }
 
-@media (min-width: @screen-sm-min) {
-    .list-as-blocks {
-        ul {
-            li {
-                width: 50%;
-
-                a {
-                    margin-right: 15px;
-                }
-
-                &:nth-child(2n) {
-                    a {
-                        margin-right: 0px;
-                    }
-                }
-            }
-        }
+@media (max-width: @screen-sm-min) {
+  .list-as-blocks {
+    ul {
+      li {
+        float: none;
+        margin-left: 0;
+      }
     }
-}
-
-@media (min-width: @screen-md-min) {
-    .list-as-blocks {
-        ul {
-            li {
-                width: 33.333%;
-
-                a {
-                    margin-right: 15px;
-                }
-
-                &:nth-child(2n) {
-                    a {
-                        margin-right: 15px;
-                    }
-                }
-
-                &:nth-child(3n) {
-                    a {
-                        margin-right: 0px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: @screen-lg-min) {
-    .list-as-blocks {
-        ul {
-            li {
-                width: 20%;
-
-                a {
-                    margin-right: 15px;
-                }
-
-                &:nth-child(2n) {
-                    a {
-                        margin-right: 15px;
-                    }
-                }
-
-                &:nth-child(3n) {
-                    a {
-                        margin-right: 15px;
-                    }
-                }
-
-                &:nth-child(5n) {
-                    a {
-                        margin-right: 0px;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 .panel-analytics {

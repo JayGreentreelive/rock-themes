@@ -6623,6 +6623,77 @@ div.aspNetDisabled {
     removed in Rock v 6.0.
 */
 
+.list-as-blocks h3 {
+	margin-top: 0;
+	font-size: 14px;
+	margin: 6px 0;
+}
+
+.list-as-blocks ul {
+	padding: 0;
+	list-style: none;
+	margin-top: 16px;
+}
+
+.list-as-blocks ul li {
+	border-radius: 4px;
+	border: 1px solid #cde1f1;
+	float: left;
+	margin: 0 1.25% 15px;
+	width: 47.5%;
+	overflow: hidden;
+	position: relative;
+	overflow: visible;
+	text-align: center;
+}
+
+.list-as-blocks ul li a {
+	background-color: #f5f9fc;
+	display: block;
+	color: #5697d0;
+	height: 90px;
+	padding: 15px;
+	border-radius: 4px;
+	transition: background-color 200ms linear;
+}
+
+.list-as-blocks ul li a i {
+	font-size: 26px;
+	color: #7eb0db;
+	margin-top: 6px;
+}
+
+.list-as-blocks ul li a:hover {
+	background-color: #f3f3f4;
+	color: #ffffff;
+	border-color: #e6e6e8;
+}
+
+.list-as-blocks ul li a:hover i {
+	color: #ffffff;
+}
+
+.list-as-blocks ul li a div.notification {
+	position: absolute;
+	top: -10px;
+	right: -6px;
+}
+
+.list-as-blocks ul li a div.notification .label {
+	border-radius: 36px;
+	padding: 2px 6px;
+}
+
+.list-as-blocks ul li.active a {
+	background-color: #f3f3f4;
+	color: #ffffff;
+	border-color: #d8d8dc;
+}
+
+.list-as-blocks ul li.active a i {
+	color: #ffffff;
+}
+
 /*
   Rock Theme Styles
 
@@ -7223,7 +7294,6 @@ table {
 
 .list-as-blocks ul li {
 	width: 100%;
-	margin: 0px;
 	border-radius: 0px;
 	border: 0px;
 }
@@ -8346,21 +8416,22 @@ div.tagsinput input {
 	text-align: right;
 }
 
-.list-as-blocks ul li {
-	width: 50%;
-}
-
-.list-as-blocks ul li a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(2n) a {
-	margin-right: 0px;
-}
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+.list-as-blocks ul li {
+	margin: 0 1% 15px;
+	width: 32%;
+}
+
+.list-as-blocks ul li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.list-as-blocks ul li:nth-child(3n+1) {
+	margin-left: 0;
+}
 
 .list-as-blocks ul li {
 	margin: 0 1% 15px;
@@ -8546,6 +8617,19 @@ div.tagsinput input {
 	padding-left: 15px;
 }
 
+.list-as-blocks ul li {
+	margin: 0 1% 15px;
+	width: 18.4%;
+}
+
+.list-as-blocks ul li:nth-child(5n) {
+	margin-right: 0;
+}
+
+.list-as-blocks ul li:nth-child(5n+1) {
+	margin-left: 0;
+}
+
 .updateprogress-status {
 	padding: 30px 20px;
 	margin-left: -60px;
@@ -8558,22 +8642,6 @@ div.tagsinput input {
 
 .updateprogress-status .spinner > div {
 	width: 10px;
-}
-
-.list-as-blocks ul li {
-	width: 33.333%;
-}
-
-.list-as-blocks ul li a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(2n) a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(3n) a {
-	margin-right: 0px;
 }
 
 }
@@ -8604,26 +8672,6 @@ div.tagsinput input {
 
 .lg-text-right {
 	text-align: right;
-}
-
-.list-as-blocks ul li {
-	width: 20%;
-}
-
-.list-as-blocks ul li a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(2n) a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(3n) a {
-	margin-right: 15px;
-}
-
-.list-as-blocks ul li:nth-child(5n) a {
-	margin-right: 0px;
 }
 
 }
@@ -8693,6 +8741,11 @@ body.navbar-side-close .navbar-static-side {
 
 .personprofile .personprofilebar-bio {
 	text-align: center;
+}
+
+.list-as-blocks ul li {
+	float: none;
+	margin-left: 0;
 }
 
 }

@@ -1,0 +1,119 @@
+.list-as-blocks {
+
+  h3 {
+    margin-top: 0;
+    font-size: 14px;
+    margin: 6px 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 16px;
+
+    li {
+      border-radius: @border-radius-base;
+      border: 1px solid @listasblocks-border-color;
+      float: left;
+      margin: 0 1.25% @spacing-md-px;
+      width: 47.5%;
+      overflow: hidden;
+      position: relative;
+      overflow: visible;
+      text-align: center;
+
+      a {
+        background-color: @listasblocks-bg;
+        display: block;
+        color: @listasblocks-color;
+        height: 90px;
+        padding: @spacing-md-px;
+        border-radius: @border-radius-base;
+        -webkit-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -o-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+
+        i {
+            font-size: 26px;
+            color: lighten(@listasblocks-color, 10%);
+            margin-top: 6px;
+        }
+
+        &:hover {
+          background-color: @listasblocks-rollover-bg;
+          color: @listasblocks-rollover-text-color;
+          border-color: @listasblocks-rollover-border-color;
+
+          i {
+            color: lighten(@listasblocks-rollover-text-color, 10%);
+          }
+        }
+
+        div.notification {
+          position: absolute;
+          top: -10px;
+          right: -6px;
+
+          .label {
+            border-radius: 36px;
+            padding: 2px 6px;
+          }
+        }
+      }
+
+      &.active {
+        a {
+          background-color: @listasblocks-active-bg;
+          color: @listasblocks-active-color;
+          border-color: @listasblocks-active-border-color;
+
+          i {
+            color: lighten(@listasblocks-active-color, 10%);
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+@media @sm-only { // tablet portrait and larger
+  .list-as-blocks {
+    ul {
+      li {
+        margin: 0 1% @spacing-md-px;
+        width: 32%;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media @md { // tablet portrait and larger
+  .list-as-blocks {
+    ul {
+      li {
+        margin: 0 1% @spacing-md-px;
+        width: 18.4%;
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(5n+1) {
+            margin-left: 0;
+        }
+      }
+    }
+  }
+}

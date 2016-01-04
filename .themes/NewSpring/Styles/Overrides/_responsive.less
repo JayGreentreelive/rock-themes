@@ -1,0 +1,184 @@
+@media (min-width: 1441px) {
+    .nav-trigger {
+        display: none;
+    }
+
+    #content-wrapper, body.navbar-side-close #content-wrapper {
+        left: @sidebar-width;
+    }
+
+    .navbar-static-side, body.navbar-side-close .navbar-static-side {
+        left: 0px;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .soft {
+        padding: 0px;
+    }
+
+    .navbar-static-top {
+        .nav-trigger {
+            margin-top: -13px;
+            display: block;
+        }
+    }
+
+    #content-wrapper {
+        left: 0;
+        // width: 100%;
+
+        body.navbar-side-open & {
+            left: @sidebar-width;
+            right: -@sidebar-width;
+        }
+
+        #page-content {
+            padding: 15px;
+        }
+
+        & > footer {
+            padding: 0 15px;
+        }
+    }
+
+    // Admin Menu Overrides for Mobile
+    .navbar-static-top {
+        #zone-header {
+            width: auto;
+            max-width: 185px;
+
+            .smartsearch {
+                input.searchinput {
+                    padding-left: 28px;
+                    width: 100%;
+                }
+            }
+        }
+
+        #zone-login {
+            margin-left: 10px;
+
+            .loginstatus {
+                .dropdown-toggle {
+                    padding-left: 45px;
+                    padding-right: 5px;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                & > li {
+                    .dropdown-menu {
+                        position: absolute;
+                        right: 0px;
+                        left: auto;
+                        background-color: @light-primary;
+
+                        li {
+                            a {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+
+                            &:hover {
+                                a {
+                                    background-color: @green-primary;
+                                    color: @light-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Panels
+    .panel {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: @screen-sm-min) {
+    .personprofile .personprofilebar-bio {
+        text-align: center;
+    }
+}
+
+@media (max-width: @screen-sm-min) {
+  .list-as-blocks {
+    ul {
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.panel-analytics {
+
+  .filter-options,
+  .analysis-types {
+    background-color: @light-secondary;
+    color: @dark-secondary;
+
+    li, h4 {
+      color: @dark-secondary;
+    }
+
+    .fa {
+      color: @green-primary;
+
+      &.fa-refresh {
+        color: @light-primary;
+      }
+    }
+  }
+
+  .alert-default {
+    background-color: @light-secondary;
+    border-color: @light-tertiary;
+    color: @dark-secondary;
+  }
+
+  .alert-warning {
+    background-color: @alert-color;
+    border-color: darken(@alert-color, 10);
+    color: @light-primary;
+  }
+
+  .grid-filter,
+  .table > thread > tr > th {
+    background-color: @light-secondary;
+    color: @dark-secondary;
+  }
+
+  .label-info {
+    background-color: @green-primary;
+  }
+}
+
+.line-chart .legend {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 22px;
+
+  table tr {
+    border-bottom: none;
+  }
+}
+
+.datepicker table td {
+
+  &.today {
+    background-color: @green-primary;
+  }
+
+  &.active {
+    background-color: @green-secondary;
+  }
+}

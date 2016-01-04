@@ -1,0 +1,122 @@
+body {
+    overflow: hidden;
+}
+
+// Input Overrides
+.input-width-md {
+
+  &.date {
+    width: 160px;
+  }
+}
+
+.logo {
+    display: none;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-image: url('../Assets/Images/newspring-logo.png');
+    background-size: cover;
+}
+
+#content-wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 68px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: darken(@light-primary, 3);
+
+    .navbar-side-open & {
+        left: @sidebar-width;
+    }
+}
+
+.navbar {
+    min-height: 0px;
+}
+
+// Top Navbar Styling
+.navbar-static-top {
+    background-color: @green-primary;
+    border-color: @green-primary;
+    padding: 10px;
+    padding-bottom: 9px;
+
+    .nav-trigger {
+        position: absolute;
+        top: 50%;
+        padding: 0 7px;
+        margin-top: -14px;
+        font-size: @font-size-large;
+        color: @light-primary;
+        cursor: pointer;
+        display: none;
+    }
+
+    .navbar-zone-header {
+        text-align: right;
+    }
+
+    #zone-login, #zone-header {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #zone-header {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    #zone-login {
+        margin-left: 15px;
+
+        .navbar-nav {
+            margin: 0px;
+        }
+
+        .loginstatus {
+            float: none;
+
+            & > li {
+                min-width: 0;
+                float: none;
+
+                & > a {
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-left: 50px;
+                    text-align: left;
+                    color: @light-primary;
+
+                    .profile-photo {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 3px;
+                    }
+                }
+
+                &.open > a {
+                    background-color: transparent;
+                }
+
+                .dropdown-menu {
+                    margin-top: 10px;
+
+                    li {
+                        a {
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

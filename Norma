@@ -8,6 +8,11 @@
   "copy":
     "src": "../rock/RockWeb/Styles/**/*"
     "dest": "./.remote/Styles/RockWeb"
+    
+  "copy-printStyles":
+    "@extend": "copy"
+    "src": "../rock/RockWeb/Themes/Rock/Styles/**/*"
+    "dest": "./.remote/Styles/RockTheme"
   
   ####
   

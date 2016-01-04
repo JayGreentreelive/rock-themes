@@ -1,0 +1,148 @@
+// Side Navbar Styling
+.navbar-static-side {
+    background-color: @accent-bold-color;
+    color: @accent-bold-text-color;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0px;
+    width: @sidebar-width;
+    padding-bottom: 80px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    // Home Link
+    .home {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 15px 18px 18px 19px;
+        font-size: @font-size-base;
+        line-height: @line-height-base;
+        font-weight: @font-weight-semibold;
+        border-bottom: 1px solid rgba(255,255,255,.05);
+        color: @accent-bold-text-color;
+        text-decoration: none;
+
+        &:before {
+            content: '';
+            float: left;
+            height: 30px;
+            width: 30px;
+            background-image: url('../Assets/Images/newspring-logo.png');
+            background-size: cover;
+            margin-right: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: @accent-bold-text-color;
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background-color: lighten(@accent-bold-color, 5%);
+            cursor: pointer;
+        }
+    }
+
+    .navbar-side {
+        display: inline-block;
+        width: 100%;
+
+        & > li {
+            text-align: left;
+            margin-top: 0;
+            padding: 17px 18px 16px 18px;
+            font-size: @font-size-base;
+            line-height: @line-height-base;
+            font-weight: @font-weight-semibold;
+            border-bottom: 1px solid rgba(255,255,255,.05);
+            color: @accent-bold-text-color;
+
+            &:hover {
+                background-color: lighten(@accent-bold-color, 5%);
+                cursor: pointer;
+            }
+
+            p, i {
+                font-size: 16px;
+                line-height: 30px;
+                color: @accent-bold-text-color;
+                margin-bottom: 0;
+            }
+
+            > i {
+                float: left;
+                position: relative;
+                top: -1px;
+                font-size: 24px;
+                display: inline-block;
+                margin-right: 20px;
+
+                &:hover {
+                    background-color: lighten(@accent-bold-color, 5%);
+                }
+            }
+
+            &.open {
+                background-color: lighten(@accent-bold-color, 5%);
+            }
+
+            .nav-childpages {
+                padding-top: 24px;
+                margin-left: -5px;
+                z-index: 9999;
+                background-color: lighten(@accent-bold-color, 5%);
+                display: none;
+                font-size: @font-size-base;
+                text-align: left;
+
+                li a {
+                    font-weight: 500;
+                    padding: 6px 10px;
+                    color: @accent-bold-text-color;
+                    border-radius: @border-radius-base;
+
+                    &:focus {
+                        background-color: lighten(@accent-bold-color, 5%);
+                    }
+
+                    &:hover {
+                        background-color: darken(@accent-bold-color, 5%);
+                    }
+                }
+
+                li.title {
+                    font-size: 18px;
+                    font-weight: @font-weight-light;
+                    color: @green-primary;
+                    margin-bottom: -8px;
+                }
+
+                li.header {
+                    margin: 14px 1px 4px 1px;
+                    padding-left: 9px;
+                    padding-right: 10px;
+                    color: @green-primary;
+                    font-weight: @font-weight-semibold;
+                    padding-bottom: 4px;
+                    border-bottom: 1px solid lighten(@accent-bold-color, 10%);
+                    font-weight: @font-weight-semibold;
+                    text-transform: uppercase;
+                }
+
+                li.header:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        > li.open {
+            .nav-childpages {
+                display: block;
+            }
+        }
+    }
+}

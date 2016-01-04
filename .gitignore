@@ -11,3 +11,4 @@ test
 ./vendor
 /_vendor
 vendor
+.vscode

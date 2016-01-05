@@ -70,9 +70,9 @@ table {
 
             &.active {
                 a {
-                    background-color: @green-primary;
-                    border-color: @green-primary;
-                    color: @light-primary;
+                    background-color: @theme-1;
+                    border-color: @theme-1;
+                    color: @theme-1-text;
                 }
             }
         }
@@ -127,6 +127,7 @@ table {
 }
 
 #content-wrapper {
+    position: absolute;
     background-color: @body-bg;
     overflow-y: auto;
 
@@ -251,7 +252,7 @@ body#splash {
         }
 
         .rock-logo {
-            fill: @green-primary;
+            fill: @theme-1;
         }
     }
 
@@ -291,10 +292,20 @@ body#splash {
     overflow: hidden;
 }
 
-.personprofile small {
-    color: @dark-secondary;
-    opacity: .7;
+.badge-attendance {
+  
+  ul.badge-attendance-chart {
+    
+    li span {
+      background-color: @dark-secondary;
+    }
+  }
 }
+
+// .personprofile small {
+//     color: @dark-secondary;
+//     opacity: .7;
+// }
 
 .personprofilebar-bio {
     position: relative;
@@ -335,15 +346,19 @@ body#splash {
     }
 
     .label-campus {
-        background-color: @green-primary;
+        background-color: @theme-1;
     }
 
     .summary {
         margin-top: 10px;
     }
 
-    p, a, li {
+    p, a, li, small {
         color: @light-primary;
+    }
+    
+    small {
+      font-style: italic;
     }
 
     .dropdown {
@@ -468,7 +483,7 @@ body#splash {
         padding: 0px;
         float: none;
         border-right: 0px;
-        background-color: @green-primary;
+        background-color: @theme-1;
         z-index: 2;
 
         p {
@@ -573,7 +588,7 @@ body#splash {
         left: 0px;
         width: 0%;
         height: 100%;
-        background: @green-primary;
+        background: @theme-1;
         z-index: 1;
         border-radius: 0px;
 
@@ -638,7 +653,7 @@ body#splash {
     width: @player-size*1.5;
     height: @player-size*1.5;
     line-height: @player-size*1.5;
-    background-color: @alert-color;
+    background-color: @brand-danger;
     color: @light-primary;
     z-index: 1001;
     opacity: 1;

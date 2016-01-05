@@ -1,0 +1,41 @@
+// Grid
+@grid-border-color: @panel-border;   // The border color of the grids cells.
+@grid-padding: 8px;         // The default padding of the grid cells.
+
+//// Filter Section
+@grid-filter-bg: @panel-heading-bg;        // The background color of the filter section of the grid.
+@grid-filter-color: @panel-heading-text-color; // The text color of the filter section of the grid.
+
+//// Grid Header
+@grid-column-header-bg: @panel-heading-bg;                        // The background color of the grid header.
+@grid-column-header-text-color: @panel-heading-text-color;     // The text color of the grid header.
+@grid-column-header-font-size: 14px;                    // The font size of the grid header.
+
+@grid-column-header-border-color: @grid-border-color;    // The border color of the grid header.
+//--
+@grid-column-header-bold-bg: @nav-bg;                   // Background color for bold table headers like the merge person page.
+@grid-column-header-bold-color: @nav-color;             // The text color for bold table headers like the merge person page.
+
+
+//// Row Striping
+@grid-row-even-bg: @light-primary;         // The even rows background color.
+@grid-row-even-color: @text-color;  // The even rows text color.
+@grid-row-odd-bg: @light-secondary;         // The odd rows background color.
+@grid-row-odd-color: @text-color;   // The odd rows text color.
+
+//// Hover
+@grid-hover-bg: darken(@panel-heading-bg, 2%);            // Row background color when hovered over.
+@grid-hover-color: @text-color;     // Row text color when hovered over.
+
+//// Section Headers
+@grid-section-bg: @theme-4;          // Some grids like the person merge grid have section headers to group like rows. This styles the background of these rows.
+@grid-section-color: @theme-4-text;  // Some grids like the person merge grid have section headers to group like rows. This styles the text of these rows.
+
+//// Pager Section
+@grid-pager-bg: @panel-heading-bg;
+@grid-pager-color: @panel-heading-text-color;
+//--
+@grid-pager-button-bg: @panel-heading-bg;
+@grid-pager-button-color: @text-color;
+@grid-pager-button-border: darken(@grid-pager-button-bg, 15%);
+@grid-pager-button-active-bg: lighten(@grid-pager-button-bg, 5%);

@@ -1,7 +1,7 @@
 // Side Navbar Styling
 .navbar-static-side {
-    background-color: @accent-bold-color;
-    color: @accent-bold-text-color;
+    background-color: @gray-darker;
+    color: @gray-lighter;
     position: absolute;
     top: 0px;
     left: 0;
@@ -21,7 +21,7 @@
         line-height: @line-height-base;
         font-weight: @font-weight-semibold;
         border-bottom: 1px solid rgba(255,255,255,.05);
-        color: @accent-bold-text-color;
+        color: @gray-lighter;
         text-decoration: none;
 
         &:before {
@@ -37,12 +37,12 @@
         p {
             font-size: 16px;
             line-height: 30px;
-            color: @accent-bold-text-color;
+            color: @gray-lighter;
             margin-bottom: 0;
         }
 
         &:hover {
-            background-color: lighten(@accent-bold-color, 5%);
+            background-color: lighten(@gray-darker, 5%);
             cursor: pointer;
         }
     }
@@ -59,17 +59,17 @@
             line-height: @line-height-base;
             font-weight: @font-weight-semibold;
             border-bottom: 1px solid rgba(255,255,255,.05);
-            color: @accent-bold-text-color;
+            color: @gray-lighter;
 
             &:hover {
-                background-color: lighten(@accent-bold-color, 5%);
+                background-color: lighten(@gray-darker, 5%);
                 cursor: pointer;
             }
 
             p, i {
                 font-size: 16px;
                 line-height: 30px;
-                color: @accent-bold-text-color;
+                color: @gray-lighter;
                 margin-bottom: 0;
             }
 
@@ -82,19 +82,19 @@
                 margin-right: 20px;
 
                 &:hover {
-                    background-color: lighten(@accent-bold-color, 5%);
+                    background-color: lighten(@gray-darker, 5%);
                 }
             }
 
             &.open {
-                background-color: lighten(@accent-bold-color, 5%);
+                background-color: lighten(@gray-darker, 5%);
             }
 
             .nav-childpages {
                 padding-top: 24px;
                 margin-left: -5px;
                 z-index: 9999;
-                background-color: lighten(@accent-bold-color, 5%);
+                background-color: lighten(@gray-darker, 5%);
                 display: none;
                 font-size: @font-size-base;
                 text-align: left;
@@ -102,22 +102,22 @@
                 li a {
                     font-weight: 500;
                     padding: 6px 10px;
-                    color: @accent-bold-text-color;
+                    color: @gray-lighter;
                     border-radius: @border-radius-base;
 
                     &:focus {
-                        background-color: lighten(@accent-bold-color, 5%);
+                        background-color: lighten(@gray-darker, 5%);
                     }
 
                     &:hover {
-                        background-color: darken(@accent-bold-color, 5%);
+                        background-color: darken(@gray-darker, 5%);
                     }
                 }
 
                 li.title {
                     font-size: 18px;
                     font-weight: @font-weight-light;
-                    color: @green-primary;
+                    color: @theme-1;
                     margin-bottom: -8px;
                 }
 
@@ -125,10 +125,10 @@
                     margin: 14px 1px 4px 1px;
                     padding-left: 9px;
                     padding-right: 10px;
-                    color: @green-primary;
+                    color: @theme-1;
                     font-weight: @font-weight-semibold;
                     padding-bottom: 4px;
-                    border-bottom: 1px solid lighten(@accent-bold-color, 10%);
+                    border-bottom: 1px solid lighten(@gray-darker, 10%);
                     font-weight: @font-weight-semibold;
                     text-transform: uppercase;
                 }

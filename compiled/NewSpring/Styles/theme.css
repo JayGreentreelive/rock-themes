@@ -16073,6 +16073,7 @@ li,
 small {
 	margin-top: 0px;
 	color: #303030;
+	font-family: colfax-web, sans-serif;
 }
 
 h1,
@@ -16482,6 +16483,18 @@ table tr td {
 
 .picker .picker-label {
 	background-color: #ffffff;
+}
+
+.fileupload-group .fileupload-button {
+	background-color: #6bac43;
+}
+
+.fileupload-group .fileupload-button:hover {
+	background-color: #1c683e;
+}
+
+.fileupload-group .fileupload-button span {
+	color: #ffffff;
 }
 
 .smartsearch {

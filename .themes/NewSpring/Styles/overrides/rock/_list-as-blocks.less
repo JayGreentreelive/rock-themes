@@ -1,0 +1,52 @@
+.list-as-blocks {
+    ul {
+        margin-top: 0px;
+
+        li {
+            width: 100%;
+            border-radius: 0px;
+            border: 0px;
+            margin: @base-spacing-unit;
+
+            a {
+                padding: 30px 0;
+                height: auto;
+                border-radius: @border-radius-base;
+                transition: none;
+
+                &:focus {
+                    text-decoration: none;
+                }
+
+                i {
+                    font-size: @font-size-large*1.5;
+                }
+
+                h3 {
+                    font-size: @font-size-base;
+                    font-weight: 500;
+                    width: 85%;
+                    margin: 14px auto 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                div.notification {
+                    top: 0px;
+                    right: 15px;
+
+                    .label {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        padding: 6px 8px 5px;
+                        border-radius: 0px;
+                        border-top-right-radius: 3px;
+                        border-bottom-left-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

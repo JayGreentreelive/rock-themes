@@ -1,0 +1,81 @@
+.personprofile {
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.badge-attendance {
+  
+  ul.badge-attendance-chart {
+    
+    li span {
+      background-color: @dark-secondary;
+    }
+  }
+}
+
+.personprofilebar-bio {
+    position: relative;
+    background-image: url('../Assets/Images/newlook.mark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    padding: 60px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: fade(@dark-primary, 80%);
+    }
+
+    .photo {
+        position: relative;
+        top: 7px;
+        width: 95%;
+        background-color: transparent;
+        padding: 0px;
+        border: 0px;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        color: @persondetails-bio-color;
+        margin-bottom: 15px;
+    }
+
+    .label {
+        font-size: @base-font-size;
+    }
+
+    .summary {
+        margin-top: @base-font-size * 0.625;
+    }
+
+    p, a, li, small {
+        color: @persondetails-bio-color;
+    }
+    
+    small {
+      font-style: italic;
+    }
+}
+
+.personprofilebar-badge {
+    background-color: @light-tertiary;
+    border-color: @light-tertiary;
+}
+
+.personprofilebar-family {
+    padding: 40px 30px;
+}
+
+.personprofilebar-family .addresses ul li.address {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+// Wizard Styles { Used on pages like 'Calendar' and 'Event Registration' to help guide the user through a complex series of screens. }
+
+@wizard-bg: @pagetitle-bg;
+@wizard-item-bar-color: darken(@wizard-bg, 10%);
+@wizard-item-bar-complete-color: darken(@wizard-item-bar-color, 10%);
+//--
+@wizard-item-label-active-color: @pagetitle-text-color;
+@wizard-item-icon-active-color: @nav-pills-active-link-hover-color;
+@wizard-item-icon-active-bg: @nav-pills-active-link-hover-bg;
+//--
+@wizard-item-label-complete-color: @wizard-item-label-active-color;
+@wizard-item-icon-complete-color: @wizard-item-icon-color;
+@wizard-item-icon-complete-bg: @wizard-item-icon-active-bg;
+//--
+@wizard-item-label-color: lighten(@wizard-item-label-active-color, 25%);
+@wizard-item-icon-color: lighten(@wizard-item-icon-bg, 15%);
+@wizard-item-icon-bg: darken(@wizard-bg, 10%);

@@ -1,0 +1,170 @@
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+    font-weight: inherit;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, small {
+    margin-top: 0px;
+    color: @dark-primary;
+}
+
+h1, h2, h3 {
+    letter-spacing: -.5px;
+    margin-bottom: 20px;
+}
+
+h4, h5, h6 {
+    letter-spacing: -.5px;
+    margin-bottom: 20px;
+}
+
+p, li, small, a {
+    font-size: @font-size-base;
+    letter-spacing: 0;
+}
+
+// container
+.container {
+    width: auto;
+    margin-left: 0;
+}
+
+// links
+.link--arrow, .link--arrow-back {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: @font-size-large;
+    padding-right: 18px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        margin-top: -10px;
+        content: '\f054';
+        font-family: 'FontAwesome';
+        font-size: @font-size-base;
+    }
+}
+
+.link--arrow-back {
+    padding-left: 18px;
+
+    &:after {
+        content: '\f053';
+        left: 0px;
+        right: auto;
+    }
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: @grid-hover-bg;
+    color: @grid-hover-color;
+}
+
+.table > thead > tr > th {
+    font-size: @base-font-size;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+
+    tr {
+        border-bottom: 1px solid @light-tertiary;
+
+        td {
+            padding: 10px 0;
+        }
+    }
+}
+
+.panel-note {
+  
+  article {
+    background-color: @light-secondary;
+    border-color: @light-tertiary;
+    color: @dark-primary;
+  }
+  
+}
+
+.panel-title {
+  padding-top: @base-spacing-unit * 0.75;
+  padding-bottom: @base-spacing-unit * 0.75;
+}
+
+.nav-pills > li {
+  
+  & > a:hover {
+    background-color: @green-secondary;
+    color: @light-primary;
+  }
+}
+
+.grid-paging {
+    background-color: @pagination-bg;
+    color: @pagination-color;
+
+    .pagination {
+        li {
+            a {
+                border-color: darken(@light-tertiary, 10);
+                background-color: @light-secondary;
+                font-weight: 700;
+                
+                &:hover {
+                  border-color: darken(@green-secondary, 10);
+                  background-color: @green-secondary;
+                  color: @light-primary;
+                }
+            }
+
+            &.active {
+              
+                a {
+                    background-color: @pagination-active-bg;
+                    border-color: @pagination-active-border;
+                    color: @pagination-active-color;
+                }
+            }
+        }
+    }
+}
+
+.input-width-md {
+
+  &.date {
+    width: 160px;
+  }
+}

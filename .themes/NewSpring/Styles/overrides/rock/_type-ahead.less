@@ -1,0 +1,32 @@
+.tt-query {
+    vertical-align: baseline !important;
+}
+
+.tt-dropdown-menu {
+    padding: 5px;
+    box-shadow: none;
+    color: @dark-primary;
+    background-color: @light-primary;
+
+    .smartsearch & {
+        margin-left: 0px;
+        margin-top: 0px;
+        // border: 1px solid @light-tertiary;
+        border-top: 0px;
+    }
+
+    .tt-suggestion {
+        p {
+            text-align: left;
+            padding: 5px 8px;
+            font-weight: 500;
+        }
+
+        &:hover, &.tt-is-under-cursor {
+            p {
+                background-color: @theme-1;
+                color: @theme-1-text;
+            }
+        }
+    }
+}

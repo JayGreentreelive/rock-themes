@@ -1,0 +1,176 @@
+@player-size: 60px;
+
+.player {
+    position: absolute;
+    bottom: 0px;
+    height: @player-size*1.5;
+    z-index: 1000;
+    width: 100%;
+    background-color: @dark-tertiary;
+}
+
+
+// audio.js implementation
+
+.audiojs {
+    position: absolute;
+    bottom: 0px;
+    height: @player-size*1.5;
+    z-index: 1000;
+    width: 100%;
+    background-color: @dark-tertiary;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+.audiojs {
+    background: @dark-primary;
+
+    .play-pause {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: @player-size*1.5;
+        width: @player-size*1.5;
+        padding: 0px;
+        float: none;
+        border-right: 0px;
+        background-color: @theme-1;
+        z-index: 2;
+
+        p {
+            background: none;
+            height: 100%;
+            width: 100%;
+
+            &:after {
+                position: absolute;
+                top: @player-size*.45;
+                left: 0px;
+                width: 100%;
+                margin-top: -@player-size/4;
+                font-family: 'FontAwesome';
+                font-size: @base-font-size * 3;
+                color: @light-primary;
+                text-align: center;
+            }
+
+            &.play:after {
+                content: '\f04b';
+            }
+
+            &.pause:after {
+                content: '\f04c';
+            }
+
+            &.loading:after {
+                content: '\f1ce';
+                -webkit-animation: rotation .5s infinite linear;
+            }
+
+            &.error {
+                background: rgba(0,0,0,.2);
+
+                &:after {
+                    content: '\f12a';
+                }
+            }
+        }
+    }
+}
+
+.audiojs {
+
+    .error-message {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 0 @player-size/2 0 @player-size*2;
+        margin: 0px;
+        font-size: @base-font-size * 1.5;
+        line-height: @player-size*1.5;
+        font-weight: 600;
+        color: @light-primary;
+        z-index: 2;
+    }
+}
+
+.audiojs .scrubber {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: @player-size*1.5;
+    right: @player-size*1.5;
+    width: auto;
+    margin: 0px;
+    border-top: 0px;
+    height: 100%;
+    background-color: @dark-primary;
+    cursor: pointer;
+    z-index: 1;
+
+    .progress, .loaded {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 100%;
+        background: @theme-1;
+        z-index: 1;
+        border-radius: 0px;
+    }
+
+    .progress:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,.2);
+    }
+
+    .loaded {
+        background-color: lighten(@dark-primary,10);
+        z-index: 0;
+    }
+}
+
+.audiojs .time {
+    position: absolute;
+    top: 50%;
+    right: @player-size*2;
+    z-index: 10;
+    margin: 0px;
+    margin-top: -18px;
+    padding: 0px;
+    border: 0px;
+    text-shadow: none;
+    float: none;
+    font-family: colfax-web, sans-serif;
+    font-size: @base-font-size *1.5;
+    font-weight: 600;
+    color: @light-primary;
+
+}
+
+.audiojs .close {
+    font-size: 38px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: @player-size*1.5;
+    height: @player-size*1.5;
+    line-height: @player-size*1.5;
+    background-color: @brand-danger;
+    color: @light-primary;
+    z-index: 1001;
+    opacity: 1;
+}

@@ -1,0 +1,163 @@
+// --------------------------------------------
+// --------------------------------------------
+// Set Brand Colors
+// --------------------------------------------
+// --------------------------------------------
+
+@accent-blue:       #567d8c;
+@accent-blue-light: #eaf7fc;
+
+@green-primary: 	   #6bac43;
+@green-secondary: 	#1c683e;
+@green-tertiary: 	#2a4930;
+
+@dark-primary: 		#303030;
+@dark-secondary: 	#858585;
+@dark-tertiary: 	#dddddd;
+
+@light-primary: 	#fff;
+@light-secondary: 	#f7f7f7;
+@light-tertiary: 	#ddd;
+
+@brand-success: @green-primary;
+@brand-accent:  @accent-blue;
+@brand-accent-light: @accent-blue-light;
+
+// @base-spacing-unit: 20px;
+@base-font-size: 16px;
+
+@sidebar-width: 	260px;
+
+// --------------------------------------------
+// --------------------------------------------
+// --------------------------------------------
+// Set Color Overrides
+// --------------------------------------------
+// --------------------------------------------
+
+// --------------------
+// ** Theme Specific **
+// --------------------
+
+@theme-1: @green-primary;
+@theme-1-text: @light-primary;
+
+@theme-2: @green-secondary;
+@theme-2-text: @light-primary;
+
+@theme-3: @green-tertiary;
+@theme-3-text: @light-primary;
+
+@theme-4: @light-secondary;
+@theme-4-text: @dark-primary;
+
+@theme-5: @light-tertiary;
+@theme-5-text: @dark-primary;
+
+@theme-6: @light-primary;
+@theme-6-text: @dark-secondary;
+
+@theme-7: @brand-primary;
+@theme-7-text: @light-primary;
+
+// action buttons / type labels
+@theme-8: @brand-primary;
+@theme-8-text: @light-primary;
+
+// ------------------------
+// ** Bootstrap Specific **
+// ------------------------
+
+@brand-primary:           @theme-1;
+@brand-success:           @brand-primary;
+@brand-warning:           #ecc759;
+@brand-danger:            #c64f55;
+@brand-danger-text:       @light-primary;
+@brand-info:              @theme-1;
+
+@gray-darker:             @dark-primary;
+@gray-dark:               @dark-secondary;
+@gray:                    @dark-tertiary;
+@gray-light:              @light-secondary;
+@gray-lighter:            @light-primary;
+
+// ----------------
+// ** Typography **
+// ----------------
+
+// The default text color
+@text-color:              @dark-primary;
+
+// The color for all links
+@link-color:              @brand-primary;
+
+// The rollover color for all links
+@link-hover-color:       darken(@link-color, 15%);
+
+// The muted color for text
+@text-muted:             darken(@text-color, 30%);
+
+// Text selection background color (used when people select text with the mouse)
+@text-selection-bg:      fade(@brand-primary, 0.5);
+
+// Text selection text color (used when people select text with the mouse)
+@text-selection-color:   @light-primary;
+
+// --------------------------------------------
+// --------------------------------------------
+// --------------------------------------------
+// Set Base Typography Styles
+// --------------------------------------------
+// --------------------------------------------
+
+// The base font to use for text. Be sure when defining this font that the various weights are configured.
+@font-family-sans-serif: colfax-web, sans-serif;
+// The default text size.
+@font-size-base:          @base-font-size;
+// The default line height.
+@line-height-base:        1.428571429;
+
+// ---------------
+// Heading Sizes
+// ---------------
+
+@font-size-h1:            floor(@font-size-base * 2.60);
+@font-size-h2:            floor(@font-size-base * 2.15);
+@font-size-h3:            ceil(@font-size-base * 1.70);
+@font-size-h4:            ceil(@font-size-base * 1.25);
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85);
+
+// -------------
+// Font Weights
+// -------------
+
+@base-font-weight:                400;
+@font-weight-semibold:            800;
+@font-weight-bold:                700;
+
+@base-letter-spacing:             0px;
+@letter-spacing-semibold:         0.5px;
+
+@font-weight-h1:                  600;
+@font-weight-h2:                  900;
+@font-weight-h3:                  600;
+@font-weight-h4:                  600;
+@font-weight-h5:                  700;
+@font-weight-h6:                  600;
+
+@grid-column-header-font-weight:  900;
+@grid-footer-font-weight:         300;
+@btn-font-weight:                 500;
+
+
+// Global Styles *open*
+@border-radius-base: 4px;               // The global setting for rounding corners.
+@well-bg: @body-bg;                     // The backgroud color for wells. Wells are used to group like content. #color
+@photo-border: @theme-3;                // Standard border color for photos. #color
+@help-color: #86b8cc;                   // The color of the help icon used in Rock. #color
+@required-field-color: #eca9a7;         // Color of the small dot that denotes required fields. #color
+@hr-border: lighten(@text-color, 40%);  // The color horizontal rule lines. #color
+//--
+@legend-color:                   @gray-dark; // Text color for html legend element. The legend element is not used much in the core blocks (provided here for theme developers.) #color
+@legend-border-color:            @input-border; // Border color for html legend element. The legend element is not used much in the core blocks (provided here for theme developers.) #color

@@ -15601,24 +15601,19 @@ div.aspNetDisabled {
 	line-height: 1.35714286;
 }
 
+.navbar-nav.contextsetter,
 .contextsetter {
 	background-color: #ffffff;
 	border: 1px solid #d9d9d9;
 	border-radius: 4px;
-	margin: 20px 0;
+	margin: 0 20px 20px 0;
 }
 
+.navbar-nav.contextsetter .dropdown-toggle:hover,
 .contextsetter .dropdown-toggle:hover,
+.navbar-nav.contextsetter .dropdown-toggle:focus,
 .contextsetter .dropdown-toggle:focus {
 	background-color: transparent !important;
-}
-
-.campus-context-setter,
-.schedule-context-setter,
-.group-context-setter,
-.date-range-context-setter {
-	display: inline-block;
-	margin: 0 20px 20px 0;
 }
 
 .navbar-static-side {
@@ -18354,6 +18349,11 @@ td.visible-xs {
 	height: 100px;
 }
 
+.navbar-nav.contextsetter,
+.contextsetter {
+	margin-right: 0;
+}
+
 .soft {
 	padding: 0px;
 }
@@ -18426,14 +18426,6 @@ body.navbar-side-open #content-wrapper {
 
 .panel {
 	margin-bottom: 20px;
-}
-
-.schedule-context-setter,
-.group-context-setter,
-.campus-context-setter,
-.date-range-context-setter {
-	display: block;
-	margin-right: 0;
 }
 
 .container > .soft {

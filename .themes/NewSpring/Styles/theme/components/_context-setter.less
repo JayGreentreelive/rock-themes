@@ -1,8 +1,9 @@
+.navbar-nav.contextsetter,
 .contextsetter {
     background-color: @dropdown-bg;
     border: 1px solid @dropdown-border;
     border-radius: @border-radius-base;
-    margin: @base-spacing-unit 0;
+    margin: 0 @base-spacing-unit @base-spacing-unit 0;
 
     .dropdown-toggle {
         &:hover, &:focus {
@@ -12,11 +13,21 @@
 
 }
 
-.campus-context-setter,
-.schedule-context-setter,
-.group-context-setter,
-.date-range-context-setter {
-  display: inline-block;
-  margin: 0 @base-spacing-unit @base-spacing-unit 0;
+@media (max-width: @screen-xs-max) {
+  
+  .navbar-nav.contextsetter,
+  .contextsetter {
+    margin-right: 0;
+  }
   
 }
+
+
+// .campus-context-setter,
+// .schedule-context-setter,
+// .group-context-setter,
+// .date-range-context-setter {
+//   display: inline-block;
+  
+  
+// }

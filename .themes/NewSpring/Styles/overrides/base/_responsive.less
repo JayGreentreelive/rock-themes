@@ -32,13 +32,17 @@
             left: @sidebar-width;
             right: -@sidebar-width;
         }
+        
+        #page-title {
+          padding: @base-spacing-unit @base-spacing-unit * 0.75;
+        }
 
         #page-content {
-            padding: 15px;
+            padding: @base-spacing-unit * 0.75;
         }
 
         & > footer {
-            padding: 0 15px;
+            padding: 0 @base-spacing-unit * 0.75;
         }
     }
 
@@ -98,6 +102,23 @@
     // Panels
     .panel {
         margin-bottom: 20px;
+    }
+    
+    
+    
+    // Context Setters
+    
+    .schedule-context-setter,
+    .group-context-setter,
+    .campus-context-setter,
+    .date-context-setter {
+      display: block;
+      margin-right: 0;
+    }
+    
+    
+    .container > .soft {
+      padding-top: @base-spacing-unit;
     }
 }
 

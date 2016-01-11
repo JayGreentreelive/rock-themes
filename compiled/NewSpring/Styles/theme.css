@@ -15616,7 +15616,7 @@ div.aspNetDisabled {
 .campus-context-setter,
 .schedule-context-setter,
 .group-context-setter,
-.date-context-setter {
+.date-range-context-setter {
 	display: inline-block;
 	margin: 0 20px 20px 0;
 }
@@ -18431,7 +18431,7 @@ body.navbar-side-open #content-wrapper {
 .schedule-context-setter,
 .group-context-setter,
 .campus-context-setter,
-.date-context-setter {
+.date-range-context-setter {
 	display: block;
 	margin-right: 0;
 }

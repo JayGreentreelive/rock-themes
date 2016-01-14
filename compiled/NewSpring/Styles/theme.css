@@ -10821,7 +10821,7 @@ table.attribute-grid tr th:nth-child(3) {
 	width: 40px;
 	height: 40px;
 	z-index: 500;
-	border-top: 70px solid #dddddd;
+	border-top: 70px solid #303030;
 	border-right: 70px solid transparent;
 	transition: 1s;
 	opacity: .4;
@@ -16419,6 +16419,44 @@ table tr td {
 	margin-top: 15px;
 }
 
+.panel-heading {
+	overflow: hidden;
+	padding-right: 80px !important;
+}
+
+.panel-follow-status {
+	border-left: none;
+	background-color: #aaaaaa;
+	color: #ffffff;
+	opacity: 1;
+	height: 70px;
+	width: 70px;
+	font-size: 1.25em;
+}
+
+.panel-follow-status:hover {
+	background-color: #848484;
+}
+
+.panel-follow-status:hover:before {
+	color: #ffffff;
+}
+
+.panel-follow-status:before {
+	content: '\f005';
+	top: 10px;
+	position: relative;
+	color: #ffffff;
+}
+
+.panel-follow-status.following {
+	background-color: #6bac43;
+}
+
+.panel-follow-status.following:before {
+	color: #ffffff;
+}
+
 .personprofile {
 	margin-top: 0px;
 	overflow: hidden;
@@ -16455,6 +16493,19 @@ table tr td {
 	padding: 0px;
 	border: 0px;
 	margin-bottom: 30px;
+}
+
+.personprofilebar-bio .photo .following-status i {
+	opacity: 1;
+}
+
+.personprofilebar-bio .photo .following-status.following {
+	opacity: 0.75;
+	border-top-color: #6bac43;
+}
+
+.personprofilebar-bio .photo .following-status:hover {
+	opacity: 0.75;
 }
 
 .personprofilebar-bio .title {

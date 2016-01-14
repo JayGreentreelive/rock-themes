@@ -3,4 +3,44 @@
   .actions {
     margin-top: @base-spacing-unit * 0.75;
   }
+  
+}
+
+.panel-heading {
+  overflow: hidden;
+  padding-right: @base-spacing-unit * 4 !important;
+}
+
+.panel-follow-status {
+  border-left: none;
+  background-color: darken(@panel-heading-bg, 20%);
+  color: @light-primary;
+  opacity: 1;
+  // font-weight: 900;
+  height: 70px;
+  width: 70px;
+  font-size: 1.25em;
+  
+  &:hover {
+    background-color: darken(@panel-heading-bg, 35%);
+    
+    &:before {
+      color: @light-primary;
+    }
+  }
+  
+  &:before {
+    content: '\f005';
+    top: 10px;
+    position: relative;
+    color: @light-primary;
+  }
+  
+  &.following {
+    background-color: @brand-primary;
+    
+    &:before {
+      color: @light-primary;
+    }
+  }
 }

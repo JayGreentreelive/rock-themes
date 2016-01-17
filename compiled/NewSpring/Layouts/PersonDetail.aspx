@@ -22,7 +22,7 @@
         </div>
 
         <div class="personprofilebar-badge">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="badge-group col-sm-4">
                         <Rock:Zone Name="Badge Bar Left" runat="server" />
@@ -38,13 +38,13 @@
         </div>
 
         <div class="personprofilebar-family">
-            <div class="container">
+            <div class="container-fluid">
                 <Rock:Zone Name="Family Detail" runat="server" />
             </div>
         </div>
 
 		<div class="pagetabs">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <Rock:Zone Name="Sub Navigation" runat="server" />
@@ -54,7 +54,7 @@
 		</div>
 
         <div class="person-content">
-            <div class="container">
+            <div class="containe-fluidr">
                 <div class="row">
                     <div class="col-md-8">
                         <Rock:Zone Name="Section A1" runat="server" />

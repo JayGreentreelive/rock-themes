@@ -54,7 +54,7 @@
 		</div>
 
         <div class="person-content">
-            <div class="containe-fluidr">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
                         <Rock:Zone Name="Section A1" runat="server" />

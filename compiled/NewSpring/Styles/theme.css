@@ -6865,12 +6865,12 @@ a.label:focus {
 }
 
 .label-default {
-	background-color: #f7f7f7;
+	background-color: #6bac43;
 }
 
 .label-default[href]:hover,
 .label-default[href]:focus {
-	background-color: #dedede;
+	background-color: #548735;
 }
 
 .label-primary {
@@ -9353,7 +9353,7 @@ a.aspNetDisabled {
 	content: '\f111';
 	margin-left: 4px;
 	font-size: 6px;
-	color: #eca9a7;
+	color: #c64f55;
 	vertical-align: super;
 }
 
@@ -12252,8 +12252,8 @@ div.tagsinput {
 	margin-bottom: 7.5px;
 	margin-left: 20px;
 	padding: 1px 10px 0 12px;
-	background: #c2b8a7;
-	color: #231f20;
+	background: #6bac43;
+	color: #ffffff;
 	text-decoration: none;
 	border-bottom-right-radius: 4px;
 	border-top-right-radius: 4px;
@@ -12289,7 +12289,7 @@ div.tagsinput {
 	left: -10px;
 	width: 0;
 	height: 0;
-	border-color: transparent #c2b8a7 transparent transparent;
+	border-color: transparent #6bac43 transparent transparent;
 	border-style: solid;
 	border-width: 11px 11px 11px 0;
 }
@@ -12303,21 +12303,21 @@ div.tagsinput {
 	width: 5px;
 	height: 5px;
 	border-radius: 2px;
-	background: #dbd5cb;
-	box-shadow: -1px -1px 2px #c2b8a7;
+	background: #6bac43;
+	box-shadow: -1px -1px 2px #6bac43;
 }
 
 div.tagsinput span.tag.personal {
-	background: #d0c6b4;
+	background: #6bac43;
 }
 
 div.tagsinput span.tag.personal:before {
-	border-color: transparent #d0c6b4 transparent transparent;
+	border-color: transparent #6bac43 transparent transparent;
 }
 
 div.tagsinput span.tag a {
 	font-weight: bold;
-	color: #231f20;
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 11px;
 	opacity: 0;
@@ -12575,7 +12575,7 @@ fieldset .actions {
 }
 
 .label-communicationstatus-draft {
-	background-color: #f7f7f7;
+	background-color: #6bac43;
 }
 
 .label-communicationstatus-submitted {
@@ -14420,7 +14420,7 @@ a.cke_dialog_ui_button_ok:active {
 a.help {
 	margin-left: 6px;
 	outline: 0;
-	color: #86b8cc;
+	color: #6bac43;
 }
 
 .help-message {

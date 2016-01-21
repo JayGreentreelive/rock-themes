@@ -16213,6 +16213,10 @@ table tr td {
 	margin-bottom: 0;
 }
 
+.bulk-update .form-group.bulk-item-selected {
+	padding: 0;
+}
+
 .dropdown-toggle {
 	font-weight: 500;
 }
@@ -16566,6 +16570,10 @@ table tr td {
 }
 
 .picker .dropdown-menu .scroll-container {
+	width: 100%;
+}
+
+.picker .dropdown-menu .viewport {
 	width: 100%;
 }
 

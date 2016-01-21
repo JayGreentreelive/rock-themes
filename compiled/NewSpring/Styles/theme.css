@@ -16205,6 +16205,14 @@ table tr td {
 	width: 160px;
 }
 
+.row:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.row:first-child h4 {
+	margin-bottom: 0;
+}
+
 .dropdown-toggle {
 	font-weight: 500;
 }

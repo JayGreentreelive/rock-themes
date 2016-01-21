@@ -16561,6 +16561,19 @@ table tr td {
 	background-color: #ffffff;
 }
 
+.picker .dropdown-menu {
+	width: 100%;
+}
+
+.picker .dropdown-menu .scroll-container {
+	width: 100%;
+}
+
+.picker .dropdown-menu .scrollbar {
+	position: absolute;
+	right: 0;
+}
+
 .smartsearch {
 	position: relative;
 	display: inline-block;

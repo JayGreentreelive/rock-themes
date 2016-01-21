@@ -25,7 +25,6 @@
     <title></title>
 
     <!-- Set the viewport width to device width for mobile disabling zooming -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js", true) %>" ></script>
     <script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js", true) %>"></script>

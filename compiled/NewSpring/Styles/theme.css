@@ -16469,6 +16469,10 @@ table tr td {
 	color: #ffffff;
 }
 
+.fa-info-circle.person-info-icon {
+	opacity: 0.5;
+}
+
 .personprofile {
 	margin-top: 0px;
 	overflow: hidden;

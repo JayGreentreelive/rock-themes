@@ -18158,12 +18158,12 @@ td.visible-lg {
 
 #content-wrapper,
 body.navbar-side-close #content-wrapper {
-	left: 260px;
+	margin-left: 260px;
 }
 
 .navbar-static-side,
 body.navbar-side-close .navbar-static-side {
-	left: 0px;
+	margin-left: 0px;
 }
 
 }
@@ -18438,7 +18438,7 @@ td.visible-xs {
 }
 
 #content-wrapper {
-	left: 0;
+	margin-left: 0;
 }
 
 body.navbar-side-open #content-wrapper {

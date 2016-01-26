@@ -15619,7 +15619,7 @@ div.aspNetDisabled {
 .navbar-static-side {
 	background-color: #303030;
 	color: #ffffff;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0;
 	bottom: 0px;
@@ -16244,11 +16244,6 @@ table tr td {
 	color: #ecc759;
 }
 
-#content-wrapper {
-	position: absolute;
-	overflow-y: auto;
-}
-
 #content-wrapper .container {
 	max-width: 1400px;
 }
@@ -16305,18 +16300,14 @@ table tr td {
 }
 
 #content-wrapper {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 68px;
-	overflow-y: auto;
+	position: relative;
+	margin-left: 68px;
 	-webkit-overflow-scrolling: touch;
 	background-color: #f7f7f7;
 }
 
 .navbar-side-open #content-wrapper {
-	left: 260px;
+	margin-left: 260px;
 }
 
 .add-family .col-md-12 {
@@ -16475,7 +16466,6 @@ table tr td {
 
 .personprofile {
 	margin-top: 0px;
-	overflow: hidden;
 }
 
 .badge-attendance ul.badge-attendance-chart li span {

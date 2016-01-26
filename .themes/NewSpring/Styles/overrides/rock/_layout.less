@@ -1,6 +1,4 @@
 #content-wrapper {
-    position: absolute;
-    overflow-y: auto;
 
     .container {
         max-width: 1400px;
@@ -61,17 +59,13 @@
 }
 
 #content-wrapper {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 68px;
-    overflow-y: auto;
+    position: relative;
+    margin-left: 68px;
     -webkit-overflow-scrolling: touch;
     background-color: darken(@light-primary, 3);
 
     .navbar-side-open & {
-        left: @sidebar-width;
+        margin-left: @sidebar-width;
     }
 }
 

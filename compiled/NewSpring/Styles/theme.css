@@ -15904,10 +15904,6 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-body {
-	overflow: hidden;
-}
-
 main {
 	display: block;
 }

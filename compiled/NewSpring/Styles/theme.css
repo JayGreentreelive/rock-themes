@@ -18468,8 +18468,8 @@ td.visible-xs {
 }
 
 body.navbar-side-open #content-wrapper {
-	left: 260px;
 	right: -260px;
+	margin-left: 0;
 }
 
 #content-wrapper #page-title {

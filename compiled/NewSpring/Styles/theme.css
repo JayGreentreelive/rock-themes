@@ -15363,7 +15363,8 @@ div.aspNetDisabled {
 	float: none;
 	content: '';
 	display: inline-block;
-	height: 100%;
+	top: 0;
+	bottom: 0;
 	vertical-align: middle;
 	margin-right: -0.25em;
 }
@@ -15377,6 +15378,7 @@ div.aspNetDisabled {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: -4px;
+	max-width: 100%;
 }
 
 .flush {
@@ -16234,6 +16236,14 @@ table tr td {
 
 .dropdown-menu li a:hover {
 	cursor: pointer;
+}
+
+#error {
+	overflow-x: hidden;
+}
+
+.error-wrap {
+	max-width: 750px;
 }
 
 .error-wrap .error-icon.warning {

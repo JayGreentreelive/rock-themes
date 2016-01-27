@@ -28,6 +28,13 @@
       <title>NewSpring - Error</title>
       
       <link rel="stylesheet" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Styles/theme.css") %>" />
+      
+      <!-- Icons -->
+    <link rel="shortcut icon" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Assets/Icons/favicon.ico") %>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Assets/Icons/apple.touch.large.png") %>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Assets/Icons/apple.touch.medium.png") %>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Assets/Icons/apple.touch.small.png") %>">
+    <link rel="apple-touch-icon-precomposed" href="<%= Page.ResolveUrl("~/Themes/NewSpring/Assets/Icons/apple.touch.small.png") %>">
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       

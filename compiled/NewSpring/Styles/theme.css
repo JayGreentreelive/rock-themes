@@ -16424,13 +16424,13 @@ table tr td {
 	background-size: cover;
 }
 
-.rock-modal .modal-title {
-	color: #ffffff;
-}
-
-.modal {
+.rock-modal {
 	left: auto;
 	position: relative;
+}
+
+.rock-modal .modal-title {
+	color: #ffffff;
 }
 
 .modal .modal-dialog {

@@ -28,7 +28,7 @@ using RockFramework = Rock;
 
 namespace RockWeb.Themes.NewSpring.Layouts
 {
-    public partial class Error : System.Web.UI.Page
+    public partial class Error : Rock.Web.UI.RockPage
     {
         /// <summary>
         /// Handles the Load event of the Page control.

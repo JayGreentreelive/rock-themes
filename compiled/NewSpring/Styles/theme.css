@@ -16306,7 +16306,6 @@ table tr td {
 #content-wrapper {
 	height: 100%;
 	margin-left: 68px;
-	z-index: 10000;
 	position: relative;
 	-webkit-overflow-scrolling: touch;
 	background-color: #f7f7f7;

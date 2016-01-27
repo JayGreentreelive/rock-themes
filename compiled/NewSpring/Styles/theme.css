@@ -16428,6 +16428,11 @@ table tr td {
 	color: #ffffff;
 }
 
+.modal {
+	left: auto;
+	position: relative;
+}
+
 .modal .modal-dialog {
 	margin: 0;
 	width: 100%;

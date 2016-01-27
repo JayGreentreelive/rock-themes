@@ -59,13 +59,25 @@
 }
 
 #content-wrapper {
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     margin-left: 68px;
     -webkit-overflow-scrolling: touch;
     background-color: darken(@light-primary, 3);
 
     .navbar-side-open & {
         margin-left: @sidebar-width;
+    }
+    
+    .content-panel {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
     }
 }
 

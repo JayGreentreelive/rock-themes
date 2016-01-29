@@ -159,7 +159,7 @@
             <Rock:PageDescription ID="PageDescription" runat="server" />
         </section>
 
-        <div class="containe-fluidr">
+        <div class="containe-fluid">
             <div class="soft">
 
                 <div class="row">

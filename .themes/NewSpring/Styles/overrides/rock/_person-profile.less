@@ -83,6 +83,29 @@
     small {
       font-style: italic;
     }
+    
+    .social-icons {
+      display: inline-block;
+      padding-top: 1em;
+      
+      .icon {
+        float: none;
+        
+        &:not(:last-child) {
+          margin-right: 0.5em;
+        }
+      }
+      
+      a {
+        font-size: 1.35em;
+        padding: 5px;
+        display: block;
+      }
+      
+      i {
+        width: 1em;
+      }
+    }
 }
 
 .personprofilebar-badge {

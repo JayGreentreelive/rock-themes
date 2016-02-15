@@ -16578,6 +16578,29 @@ table tr td {
 	font-style: italic;
 }
 
+.personprofilebar-bio .social-icons {
+	display: inline-block;
+	padding-top: 1em;
+}
+
+.personprofilebar-bio .social-icons .icon {
+	float: none;
+}
+
+.personprofilebar-bio .social-icons .icon:not(:last-child) {
+	margin-right: 0.5em;
+}
+
+.personprofilebar-bio .social-icons a {
+	font-size: 1.35em;
+	padding: 5px;
+	display: block;
+}
+
+.personprofilebar-bio .social-icons i {
+	width: 1em;
+}
+
 .personprofilebar-badge {
 	background-color: #dddddd;
 	border-color: #dddddd;

@@ -16251,6 +16251,22 @@ table tr td {
 	color: #ecc759;
 }
 
+.navless #content-wrapper {
+	margin-left: 0;
+}
+
+.navless .navbar-content,
+.navless #page-content,
+.navless footer .container-fluid {
+	max-width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navless #cms-admin-footer {
+	margin-left: 0;
+}
+
 #zone-login .can-configure.outline {
 	padding-right: 50px;
 }

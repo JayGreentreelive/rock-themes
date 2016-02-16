@@ -40,7 +40,7 @@
 
   "copy-Fuse":
     "@extend": "copy"
-    "src": "./Fuse/**/*"
+    "src": "./compiled/Fuse/**/*"
     "dest": "../Rock/RockWeb/Themes/Fuse"
   
   ####

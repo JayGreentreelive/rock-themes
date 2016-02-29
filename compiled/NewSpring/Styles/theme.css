@@ -15844,6 +15844,49 @@ div.aspNetDisabled {
 	margin-top: 10px;
 }
 
+.videoModal {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	border-radius: 0;
+}
+
+.videoModal .modal-dialog,
+.videoModal .modal-content {
+	height: 100%;
+}
+
+.videoModal .innerWrapper {
+	height: 100%;
+}
+
+.videoModal p {
+	display: none;
+}
+
+.videoModal .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ffffff;
+	z-index: 99999;
+	background-color: #c64f55;
+	opacity: 1;
+}
+
+.videoModal .close:hover {
+	background-color: #ab373d;
+}
+
+.videoModal .close span {
+	display: block;
+	padding: 20px 25px;
+}
+
 .shell {
 	padding: 80px 80px 60px;
 }

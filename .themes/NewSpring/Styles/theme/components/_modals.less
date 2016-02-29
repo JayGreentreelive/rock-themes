@@ -1,0 +1,42 @@
+.videoModal {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  border-radius: 0;
+  
+  .modal-dialog,
+  .modal-content {
+    height: 100%;
+  }
+  
+  .innerWrapper {
+    height: 100%;
+  }
+  
+  p {
+    display: none; 
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: @light-primary;
+    z-index: 99999;
+    background-color: @brand-danger;
+    opacity: 1;
+    
+    &:hover {
+      background-color: darken(@brand-danger, 10);
+    }
+    
+    span {
+      display: block;
+      padding: @base-spacing-unit @base-spacing-unit * 1.25;
+    }
+  }
+}

@@ -49,10 +49,9 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <asp:ContentPlaceHolder ID="css" runat="server" />
-
     <!-- Included CSS Files -->
     <link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/checkin-theme.css", true) %>" />
+    <asp:ContentPlaceHolder ID="css" runat="server" />
 
     <script src="<%# ResolveRockUrl("~/Scripts/fastclick.js", true) %>"></script>
 

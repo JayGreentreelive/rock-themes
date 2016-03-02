@@ -15600,7 +15600,7 @@ div.aspNetDisabled {
 .card p,
 .card a:not(.btn),
 .card li {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.35714286;
 }
 
@@ -16074,6 +16074,10 @@ h5 {
 
 h6 {
 	font-weight: 600;
+}
+
+p {
+	font-size: 18px;
 }
 
 h1 small,
@@ -16772,6 +16776,53 @@ table tr td {
 .updateprogress-status .spinner > div {
 	background-color: #fff;
 	width: 5px;
+}
+
+hr {
+	border-color: #f7f7f7;
+	border-width: 2px;
+}
+
+.staffUpdate--new {
+	color: #6bac43;
+}
+
+.staffUpdate--campus {
+	margin-right: 30px;
+}
+
+.staffUpdate--campus,
+.staffUpdate--content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.campus--label {
+	display: inline-block;
+	border: 3px solid;
+	border-radius: 1000px;
+}
+
+.campus--label h5 {
+	margin: 0;
+	text-transform: uppercase;
+	width: 60px;
+	height: 60px;
+	line-height: 63px;
+	color: inherit;
+}
+
+.staff--new {
+	color: #6bac43;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+p.content--time {
+	font-weight: 600;
+	font-size: 1em;
+	color: #858585;
+	text-transform: uppercase;
 }
 
 .nav-tabs > li.active > a {

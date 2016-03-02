@@ -27,6 +27,53 @@
 // -------------------------
 @import "../../../.remote/Styles/RockTheme/_print";
 
+hr {
+  border-color: #f7f7f7;
+  border-width: 2px;
+}
+
+.staffUpdate--new {
+  color: @brand-primary;
+}
+
+.staffUpdate--campus {
+  margin-right: @base-spacing-unit * 1.5;
+}
+
+.staffUpdate--campus,
+.staffUpdate--content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.campus--label {
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 1000px;
+  
+  h5 {
+    margin: 0;
+    text-transform: uppercase;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    color: inherit;
+  }
+}
+
+.staff--new {
+  color: @brand-primary;
+  text-transform: uppercase;
+  margin-top: @base-spacing-unit / 2;
+}
+
+p.content--time {
+  font-weight: 600;
+  font-size: 1em;
+  color: #858585;
+  text-transform: uppercase;
+}
+
 .nav-tabs > li.active > a {
   background-color: @brand-primary;
   color: @light-primary;
